@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo, img/webicon2.png' %}">
+
+    <!--font-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
+
+    <!--javascript-->
+    <script src="{% static 'javascript/jquery-1.12.4.js' %}"></script>
+    <script src="{% static 'javascript/custom.js' %}"></script>
+    <script src="{% static 'javascript/information_table(fruit).js' %}"></script>
+
+
+    <!--css-->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'css/infomation.css' %}">
+    <link rel="stylesheet" href="{% static 'css/newspage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Q&A.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sale.css' %}">
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+    <link rel="stylesheet" href="{% static 'css/sitemap.css' %}">
+</head>
+
+<body>
+
+    <!-- nav -->
+
+    <header>
+        <div class="header_tiny">
+            <div class="tiny_menu">
+                <a href="/">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
+            </div>
+        </div>
+
+        <div class="first">
+            <div class="logo">
+                <a href="/">
+                    <img src="{% static 'logo, img/logo/Logo.png' %}" alt="logo">
+                </a>
+            </div>
+
+            <div class="lnb">
+                <ul class="main_menu">
+                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
+
+                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
+
+                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
+
+                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
+
+                    <li><a href="#none" class="btn5"><img src="{% static 'logo, img/돋보기.png' %}"></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- left_menu -->
+
+    <div class="l_menu">
+        <div class="left_logo">
+            <br><br><br><br><br><br><br><br><br>
+            <img class="bgo" src="{% static 'logo, img/바로가기.png' %}">
+            <hr class="second_hr">
+        </div>
+
+        <div class="left">
+            <ul class="left_m">
+                <li><a href="#none" class="fruit">과 일</a>
+                    <div class="sub_menu">
+                        <a href="#">사과</a>
+                        <a href="#none">배</a>
+                        <a href="#none">참외</a>
+                        <a href="#none">수박</a>
+                    </div>
+                </li>
+
+                <li><a href="#none" class="vegetables">채 소</a>
+                    <div class="sub_menu">
+                        <a href="#">감자</a>
+                        <a href="#none">고구마</a>
+                        <a href="#none">당근</a>
+                        <a href="#none">대파</a>
+                        <a href="#none">마늘</a>
+                        <a href="#none">무</a>
+                        <a href="#none">상추</a>
+                        <a href="#none">양파</a>
+                        <a href="#none">오이</a>
+                        <a href="#none">콩나물</a>
+                    </div>
+                </li>
+
+                <li><a href="#none" class="rice">쌀 / 잡곡</a>
+                    <div class="sub_menu">
+                        <a href="#">백미</a>
+                        <a href="#none">보리쌀</a>
+                        <a href="#none">찹쌀</a>
+                    </div>
+                </li>
+
+                <li><a href="#none" class="fish">수 산 물</a>
+                    <div class="sub_menu">
+                        <a href="#">고등어</a>
+                        <a href="#none">갈치</a>
+                        <a href="#none">조기</a>
+                        <a href="#none">동태</a>
+                        <a href="#none">오징어</a>
+                        <a href="#none">바지락</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    {% block content %}
+    <head><title>바스켓 'SEOUL</title></head>
+
+    <!-- banner / section1 -->
+    <div class="wrap1">
+        <div class="banner">
+            <a href="#" class="banner1"><img src="{% static 'logo, img/주요물가변동그래프 제목.png' %}" alt="banner1"></a>
+            <br><br>
+            <a href="#" class="banner2"><img src="{% static 'logo, img/maingraph.png' %}" alt="banner2"></a>
+        </div>
+    </div>
+
+
+
+    <!-- contents/ section2 -->
+    <div class="second">
+        <div class="second_inner">
+            <img class="newstitle" src="{% static 'logo, img/오늘의 뉴스.png' %}">
+            <a href="https://www.hankyung.com/economy/article/2022071083561">
+                <img class="newsmain1" src="{% static 'logo, img/mainnews1_2.png' %}"></a>
+        </div>
+
+        <div class="second_inner2">
+            <img class="newssub2" src="{% static 'logo, img/newssub1.png' %}">
+            <img class="newssub3" src="{% static 'logo, img/newssub2.png' %}">
+        </div>
+    </div>
+    <a href="newspage.html"><i class="fa-solid fa-plus control"></i></a>
+
+
+
+    <!-- contents / section3-->
+
+    <div class="section3">
+        <a href="https://www.10000recipe.com/"><img class="recipe" src="{% static 'logo, img/추천레시피.png' %}"></a>
+
+        <a href="https://www.sbiz.or.kr/sijangtong/nation.do"><img class="traditional" src="{% static 'logo, img/전통시장.png' %}"></a>
+
+        <a href="http://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps?menuId=PS03924"><img class="ingredients"
+                src="{% static 'logo, img/식재료 노하우.png' %}"></a>
+
+        <a href="http://www.realfoods.co.kr/"><img class="topic" src="{% static 'logo, img/푸드토픽4.png' %}"></a>
+    </div>
+
+{% endblock %}
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="f_wrap">
+            <div class="wrap2">
+                <div class="tiny_footer">
+                    <a class="personal" href="#">개인정보처리방침</a>
+                    &nbsp;·&nbsp;
+                    <a class="email" href="#">이메일무단수집거부</a>
+                </div>
+
+                <div class="shopping">
+                    <a href="https://www.coupang.com/"><img src="{% static 'logo, img/쿠팡.png' %}"></a> &nbsp;
+                    <a href="https://www.kurly.com/"><img src="{% static 'logo, img/마켓컬리.png' %}"></a> &nbsp;
+                    <a href="http://www.gmarket.co.kr/"><img src="{% static 'logo, img/gmarket.png' %}"></a> &nbsp;
+                    <a href="https://emart.ssg.com/"><img src="{% static 'logo, img/ssg.png' %}"></a>
+                </div>
+            </div>
+            <div class="adress">
+                <p>서울 서초구 바우뫼로20길 8 &nbsp;&nbsp;&nbsp; 대표전화 : 02-1234-5678</p>
+                <p>COPYRIGHT © 바스켓 서울. ALL RIGHTS RESEVED.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
