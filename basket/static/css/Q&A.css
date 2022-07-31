@@ -307,6 +307,7 @@ header .header_tiny .tiny_menu > a:hover {
   margin-right: 3px;
   margin-left: 10px;
   color: #5c5c5c;
+  font-weight: bold;
 }
 
 .allsection > .body_top > .search_box > .box {
@@ -315,6 +316,7 @@ header .header_tiny .tiny_menu > a:hover {
 }
 
 #tb {
+  font-family: 'GmarketSans';
   margin-top: 1px;
   height: 40px;
   border: 0.5px solid #999999;
@@ -324,34 +326,41 @@ header .header_tiny .tiny_menu > a:hover {
   margin-left: 15px;
   margin-right: 3px;
   margin-top: 3px;
+  font-weight: bolder;
+  border-radius: 5px;
 }
 
 input {
+  font-family: 'GmarketSans';
   width: 250px;
   height: 40px;
   border: 0.5px solid #a1a1a1;
   background: #ffffff;
   font-size: 15px;
   margin-top: 3px;
+  margin-right: 3px;
   float: left;
+  border-radius: 5px;
 }
 
 button {
+  font-family: 'GmarketSans';
   width: 80px;
   height: 40px;
   border: none;
   border-radius: none;
-  background-color: #000000;
+  background-color: #247b47;
   padding: 2px;
   color: white;
   font-size: 15px;
   margin-right: 5px;
   margin-top: 3px;
   float: right;
+  border-radius: 5px;
 }
 
 button:hover {
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid #f6f6ec;
 }
 
 
@@ -365,13 +374,13 @@ button:hover {
   padding: 3px;
   margin-left: 150px;
   margin-top: 15px;
-  border-top: 2px solid #444444;
+  border-top: 2px solid #ef7113;
   border-collapse: collapse;
   font-size: 15px;
 }
 
 .bold {
-  border-bottom: 2px solid #444444;
+  border-bottom: 2px solid #ef7113;
 }
 
 th,
@@ -390,6 +399,7 @@ td {
 
 .table .td .se {
   width: 100px;
+  font-weight: bolder;
 }
 
 .table .list {
@@ -397,22 +407,13 @@ td {
 }
 
 .table .list .down {
-  color: #292929;
+  color: #444444;
 }
 
 .list .se:hover {
   text-decoration: underline;
   font-weight: bold;
 }
-
-.list .down:hover {
-  -webkit-transform: scale(1.2, 1.2);
-  -moz-transform: scale(1.2, 1.2);
-  -o-transform: scale(1.2, 1.2);
-  -ms-transform: scale(1.2, 1.2);
-  transform: scale(1.2, 1.2);
-}
-
 
 
 
@@ -426,27 +427,29 @@ td {
 
 .footer {
   width: 85%;
-  height: 140px;
-  background: #ffecd5;
+  height: 160px;
+  background: #f7f1e7;
+  margin-top: 150px;
   float: right;
   padding: 20px 0px 0px 0px;
-  border-radius: 50px 0px 0px 0px;
-  margin-top: 250px;
+  border-radius: 55px 0px 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
 }
 
 .footer .f_wrap {
-  margin-left: 150px;
+  margin-left: 80px;
 }
 
 .footer .tiny_footer {
   width: 350px;
   display: flex;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .footer .tiny_footer .personal {
-  color: #ef6804;
-  font-weight: 600;
+  color: #247b47;
+  font-weight: bold;
 }
 
 .footer .tiny_footer .email {
@@ -464,15 +467,12 @@ td {
 
 .footer .adress {
   width: 500px;
+  margin-top: 40px;
 }
 
 .footer .adress p {
   margin-top: 20px;
   font-size: 15px;
   line-height: 10px;
-}
-
-.footer .shopping {
-  position: relative;
-  margin-left: 200px;
+  margin-left: 0;
 }
