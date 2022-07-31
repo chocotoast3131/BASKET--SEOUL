@@ -111,22 +111,22 @@ let listObj = {
     con3: [
         {
             "id": "백미",
-            "unit": "20kg/포",
-            "price": "63,800",
+            "unit": "",
+            "price": "",
             "lastmonth": "01-100-1001",
             "variable": true
         },
         {
             "id": "보리쌀",
-            "unit": "1kg/포",
-            "price": "3,490",
+            "unit": "",
+            "price": "",
             "lastmonth": "01-100-1001",
             "variable": true
         },
         {
             "id": "찹쌀",
-            "unit": "1kg/포",
-            "price": "5,990",
+            "unit": "",
+            "price": "",
             "lastmonth": "01-100-1001",
             "variable": true
         },
@@ -181,8 +181,8 @@ function getTableData(type) {
     let title = {
         "id": "품목",
         "unit": "단위",
-        "price": "현재가격",
-        "lastmonth": "전월비",
+        "price": "현재가",
+        "lastmonth": "전월가",
         "variable": "변동가"
     }
 
