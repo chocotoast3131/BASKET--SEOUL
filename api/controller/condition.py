@@ -1,7 +1,7 @@
 from api_module import f_class__
 
 def price_code_name(code):
-    global today
+    global today 
     today = input()
     match(code):
         case "쌀/곡물":
