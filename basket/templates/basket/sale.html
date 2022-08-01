@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>할인정보 - 바스켓 'SEOUL</title>
-    <link rel="shortcut icon" type="image⁄x-icon" href="./logo,img/webicon2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
 
     <!--font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -13,11 +13,11 @@
     <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
 
     <!--javascript-->
-    <script src="./javascript/jquery-1.12.4.js"></script>
-    <script src="./javascript/custom.js"></script>
+    <script src="{% static 'javascript/jquery-1.12.4.js' %}"></script>
+    <script src="{% static 'javascript/custom.js' %}"></script>
 
     <!--css-->
-    <link rel="stylesheet" href="./css/sale.css">
+    <link rel="stylesheet" href="{% static 'css/sale.css' %}">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
         <div class="first">
             <div class="logo">
                 <a href="index.html">
-                    <img src="./logo,img/logo/Logo.png" alt="logo">
+                    <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
                 </a>
             </div>
 
@@ -47,7 +47,7 @@
 
                     <li><a href="Q&A.html" class="btn4">고객센터</a></li>
 
-                    <li><a href="search.html" class="btn5"><img src="./logo,img/돋보기.png"></a></li>
+                    <li><a href="search.html" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
 
                 </ul>
             </div>
@@ -72,15 +72,15 @@
 
         <!--title-->
         <div class="title">
-            <img src="./logo,img/gs25logo.png">
+            <img src="{% static 'logo,img/gs25logo.png' %}">
         </div>
 
         <!--left-->
         <div class="depth3Lnb">
             <ul class="eventInfo">
                 <li class="eventInfo_01"><a href="sale.html">GS25</a></li>
-                <li class="eventInfo_02"><a href="./secondpage/sale-secondpage/7-Eleven.html">7-ELEVEN</a></li>
-                <li class="eventInfo_03"><a href="./secondpage/sale-secondpage/CU.html">CU</a></li>
+                <li class="eventInfo_02"><a href="secondpage/sale-secondpage/7-Eleven.html">7-ELEVEN</a></li>
+                <li class="eventInfo_03"><a href="secondpage/sale-secondpage/CU.html">CU</a></li>
             </ul>
         </div>
 
@@ -93,7 +93,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/씨그램레몬.jpg" alt="8801047161677.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/씨그램레몬.jpg' %}" alt="8801047161677.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -110,7 +110,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/씨그램라임.jpg" alt="8801094202606.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/씨그램라임.jpg' %}" alt="8801094202606.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -128,7 +128,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/녹차녹차돌자반.jpg" alt="8806371301614.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/녹차녹차돌자반.jpg' %}" alt="8806371301614.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -145,7 +145,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/파래파래돌자반.jpg" alt="8801123103454.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/파래파래돌자반.jpg' %}" alt="8801123103454.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -162,7 +162,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/끌레도르딥초콜릿.jpg" alt="8801047161677.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/끌레도르딥초콜릿.jpg' %}" alt="8801047161677.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -179,7 +179,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/끌레도르설향딸기.jpg" alt="8801094202606.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/끌레도르설향딸기.jpg' %}" alt="8801094202606.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -197,7 +197,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/바삭바삭대추.jpg" alt="8806371301614.jpg" class="prod_img">
+                            <img src="{% static 'logo,img/gs25/1+1/바삭바삭대추.jpg' %}" alt="8806371301614.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -214,7 +214,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/GD_8804645006098_001.jpg" alt="8801123103454.jpg"
+                            <img src="{% static 'logo,img/gs25/1+1/GD_8804645006098_001.jpg' %}" alt="8801123103454.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -231,7 +231,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/GD_8804645006104_001.jpg" alt="8801047161677.jpg"
+                            <img src="{% static 'logo,img/gs25/1+1/GD_8804645006104_001.jpg' %}" alt="8801047161677.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -248,7 +248,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/GD_8859103400055_001.jpg" alt="8801094202606.jpg"
+                            <img src="{% static 'logo,img/gs25/1+1/GD_8859103400055_001.jpg' %}" alt="8801094202606.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -266,7 +266,7 @@
                 <a class="prod_item">
                     <div class="prod_wrap">
                         <div class="prod_img">
-                            <img src="./logo,img/gs25/1+1/GD_8809677721063_002.jpg" alt="8806371301614.jpg"
+                            <img src="{% static 'logo,img/gs25/1+1/GD_8809677721063_002.jpg' %}" alt="8806371301614.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
