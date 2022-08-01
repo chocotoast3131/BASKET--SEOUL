@@ -531,6 +531,10 @@ header .header_tiny .tiny_menu>a:hover {
     height: 280px;
     margin-left: 100px;
     background-color: #f5ecd9;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
     position: relative;
     font-weight: bold;
     border-radius: 30px;
@@ -550,6 +554,10 @@ header .header_tiny .tiny_menu>a:hover {
     background-position: left top;
     top: -60px;
     right: 36px;
+<<<<<<< HEAD
+=======
+    border: solid black;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 }
 
 .arrow {
@@ -597,6 +605,10 @@ header .header_tiny .tiny_menu>a:hover {
     margin-left: 120px;
     width: 350px;
     height: 280px;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
     position: relative;
     border-radius: 30px;
     border: 1px solid #b29f86;
@@ -616,7 +628,12 @@ header .header_tiny .tiny_menu>a:hover {
     position: absolute;
     background-position: right top;
     top: -60px;
+<<<<<<< HEAD
     right: 26px;
+=======
+    right: 36px;
+    border: solid black;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 }
 
 p {
@@ -653,6 +670,10 @@ p {
     margin-left: 115px;
     width: 350px;
     height: 280px;
+<<<<<<< HEAD
+=======
+    overflow: hidden;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
     position: relative;
     background-color: #e5ebe8;
     border-radius: 30px;
@@ -673,6 +694,10 @@ p {
     background-position: right top;
     top: -60px;
     right: 36px;
+<<<<<<< HEAD
+=======
+    border: solid black;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 }
 
 .number {
