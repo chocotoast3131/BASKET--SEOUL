@@ -123,6 +123,7 @@ header .header_tiny .tiny_menu > a:hover {
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 .main_menu li > .btn5 {
   top: 0;
   margin-right: 50px;
@@ -133,6 +134,20 @@ header .header_tiny .tiny_menu > a:hover {
   filter: drop-shadow(0 0 3px rgba(33, 33, 33, 0.2));
 }
 
+=======
+.main_menu li>.btn5 {
+    top: 0;
+    margin-right: 50px;
+    border-radius: 50px;
+}
+
+.main_menu li>.btn5:hover {
+    filter: drop-shadow(0 0 3px rgba(33, 33, 33, .2));
+}
+
+
+
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 /* btn1 */
 .main_menu li > .btn1::after {
   content: "";
@@ -311,6 +326,7 @@ input[id="tab04"]:checked ~ .con4 {
 }
 
 .tab-img-01 {
+<<<<<<< HEAD
   content: url("../logo,img/information_icon/fruits.png");
 }
 
@@ -340,6 +356,37 @@ input[id="tab03"]:checked + label img {
 
 input[id="tab04"]:checked + label img {
   content: url("../logo,img/information_icon/fish2.png");
+=======
+    content: url("../logo,img/information_icon/fruits.png");
+}
+
+.tab-img-02 {
+    content: url("../logo,img/information_icon/vegetable.png");
+}
+
+.tab-img-03 {
+    content: url("../logo,img/information_icon/rice.png");
+}
+
+.tab-img-04 {
+    content: url("../logo,img/information_icon/fish.png");
+}
+
+input[id="tab01"]:checked+label img {
+    content: url("../logo,img/information_icon/fruits2.png");
+}
+
+input[id="tab02"]:checked+label img {
+    content: url("../logo,img/information_icon/vegetable2.png");
+}
+
+input[id="tab03"]:checked+label img {
+    content: url("../logo,img/information_icon/rice2.png");
+}
+
+input[id="tab04"]:checked+label img {
+    content: url("../logo,img/information_icon/fish2.png");
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 }
 
 .conbox table {
@@ -349,9 +396,15 @@ input[id="tab04"]:checked + label img {
 
 .conbox table td,
 .conbox table th {
+<<<<<<< HEAD
   border: 1px solid #ddd;
   padding: 8px;
   width: 100px;
+=======
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100px;
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
 }
 
 .conbox table tr:nth-child(even) {
@@ -461,6 +514,7 @@ input[id="tab04"]:checked + label img {
 /* footer */
 
 .footer {
+<<<<<<< HEAD
   width: 85%;
   height: 160px;
   background: #f7f1e7;
@@ -511,3 +565,55 @@ input[id="tab04"]:checked + label img {
   line-height: 10px;
   margin-left: 0;
 }
+=======
+    width: 85%;
+    height: 160px;
+    background: #f7f1e7;
+    margin-top: 100px;
+    float: right;
+    padding: 20px 0px 0px 0px;
+    border-radius: 55px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
+  }
+  
+  .footer .f_wrap {
+    margin-left: 80px;
+  }
+  
+  .footer .tiny_footer {
+    width: 350px;
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .footer .tiny_footer .personal {
+    color: #247b47;
+    font-weight: bold;
+  }
+  
+  .footer .tiny_footer .email {
+    font-weight: 600;
+  }
+  
+  .footer .tiny_footer a:hover {
+    font-weight: 900;
+  }
+  
+  .footer .wrap2 {
+    height: 30px;
+    display: flex;
+  }
+  
+  .footer .adress {
+    width: 500px;
+    margin-top: 40px;
+  }
+  
+  .footer .adress p {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 10px;
+    margin-left: 0;
+  }
+>>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
