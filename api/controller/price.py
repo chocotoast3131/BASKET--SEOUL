@@ -8,6 +8,5 @@ def price_1(df):
     return df
 
 print(price_1(df)) #결과 확인용
-
 #쌀/곡물, 채소, 과일, 수산물 중 필요한 값 입력
 #ex)쌀/곡물
