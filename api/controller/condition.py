@@ -1,4 +1,4 @@
-from api_module import f_class__
+from .api_module import f_class__
 
 def price_code_name(code):
     today = input()
