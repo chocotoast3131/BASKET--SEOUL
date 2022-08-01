@@ -2,7 +2,7 @@ from .api_module import f_class__
 
 def price_code_name(code):
     global today 
-    today = input()
+    today = '20220729' #필요한 날로 수정가능
     match(code):
         case "쌀/잡곡":
             code_print = f_class__('100', today)
