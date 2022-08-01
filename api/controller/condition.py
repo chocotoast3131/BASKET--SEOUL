@@ -4,7 +4,7 @@ def price_code_name(code):
     global today 
     today = input()
     match(code):
-        case "쌀/곡물":
+        case "쌀/잡곡":
             code_print = f_class__('100', today)
         case "채소":
             code_print = f_class__('200', today)
