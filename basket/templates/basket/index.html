@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>바스켓 'SEOUL</title>
-    <link rel="shortcut icon" type="image⁄x-icon" href="./logo,img/webicon2.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
 
     <!--font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -13,11 +13,11 @@
     <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
 
     <!--javascript-->
-    <script src="./javascript/jquery-1.12.4.js"></script>
-    <script src="./javascript/custom.js"></script>
+    <script src="{% static 'javascript/jquery-1.12.4.js' %}"></script>
+    <script src="{% static 'javascript/custom.js' %}"></script>
 
     <!--css-->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
         <div class="first">
             <div class="logo">
                 <a href="index.html">
-                    <img src="./logo,img/logo/Logo.png" alt="logo">
+                    <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
                 </a>
             </div>
 
@@ -48,7 +48,7 @@
 
                     <li><a href="Q&A.html" class="btn4">고객센터</a></li>
 
-                    <li><a href="search.html" class="btn5"><img src="./logo,img/돋보기.png"></a></li>
+                    <li><a href="search.html" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
 
                 </ul>
             </div>
@@ -62,7 +62,7 @@
     <div class="l_menu">
         <div class="left_logo">
             <br><br><br><br><br><br><br><br><br>
-            <img class="bgo" src="./logo,img/바로가기_left.png">
+            <img class="bgo" src="{% static 'logo,img/바로가기_left.png' %}">
             <hr class="second_hr">
         </div>
 
@@ -119,9 +119,9 @@
     <!-- banner / section1 -->
     <div class="wrap1">
         <div class="banner">
-            <a href="#" class="banner1"><img src="./logo,img/주요물가변동그래프 제목.png" alt="banner1"></a>
+            <a href="#" class="banner1"><img src="{% static 'logo,img/주요물가변동그래프 제목.png' %}" alt="banner1"></a>
             <br><br>
-            <a href="#" class="banner2"><img src="./logo,img/maingraph.png" alt="banner2"></a>
+            <a href="#" class="banner2"><img src="{% static 'logo,img/maingraph.png' %}" alt="banner2"></a>
         </div>
     </div>
     <div class="square"></div>
@@ -132,19 +132,19 @@
     <!--section2 -->
     <div class="second">
         <div class="second_inner">
-            <img class="newstitle" src="./logo,img/오늘의 뉴스.png">
-            <img class="illustration" src="./logo,img/newsillustration.png">
+            <img class="newstitle" src="{% static 'logo,img/오늘의 뉴스.png' %}">
+            <img class="illustration" src="{% static 'logo,img/newsillustration.png' %}">
             <a href="https://www.hankyung.com/economy/article/2022071083561">
-                <img class="newsmain1" src="./logo,img/mainnews.png"></a>
+                <img class="newsmain1" src="{% static 'logo,img/mainnews.png' %}"></a>
         </div>
 
         <div class="second_inner2">
-            <img class="newssub2" src="./logo,img/newssub1.png">
-            <img class="newssub3" src="./logo,img/newssub2.png">
+            <img class="newssub2" src="{% static 'logo,img/newssub1.png' %}">
+            <img class="newssub3" src="{% static 'logo,img/newssub2.png' %}">
         </div>
     </div>
     <a href="newspage.html"><i class="fa-solid fa-plus control"></i></a>
-    <img class="eclipse" src="./logo,img/newseclipse.png">
+    <img class="eclipse" src="{% static 'logo,img/newseclipse.png' %}">
 
 
 
@@ -153,14 +153,14 @@
     <!--section3-->
 
     <div class="section3">
-        <a href="https://www.10000recipe.com/"><img class="recipe" src="./logo,img/추천레시피.png"></a>
+        <a href="https://www.10000recipe.com/"><img class="recipe" src="{% static 'logo,img/추천레시피.png' %}"></a>
 
-        <a href="https://www.sbiz.or.kr/sijangtong/nation.do"><img class="traditional" src="./logo,img/전통시장.png"></a>
+        <a href="https://www.sbiz.or.kr/sijangtong/nation.do"><img class="traditional" src="{% static 'logo,img/전통시장.png' %}"></a>
 
         <a href="http://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps?menuId=PS03924"><img class="ingredients"
-                src="./logo,img/식재료 노하우.png"></a>
+                src="{% static 'logo,img/식재료 노하우.png' %}"></a>
 
-        <a href="http://www.realfoods.co.kr/"><img class="topic" src="./logo,img/푸드토픽4.png"></a>
+        <a href="http://www.realfoods.co.kr/"><img class="topic" src="{% static 'logo,img/푸드토픽4.png' %}"></a>
     </div>
 
 
@@ -174,8 +174,8 @@
 
             <!--공지사항-->
             <div class="notice">
-                <img class="apple" src="./logo,img/apple.png">
-                <img class="notice_title" src="./logo,img/공지사항.png">
+                <img class="apple" src="{% static 'logo,img/apple.png' %}">
+                <img class="notice_title" src="{% static 'logo,img/공지사항.png' %}">
                 <span class="small10"><i class="fa-solid fa-clock"></i> 2022-08-17</span>
                 <p class="sizesmall">바스켓 'SEOUL 테스트 확인</p>
                 <a class="arrow" href="Q&A.html">
@@ -187,27 +187,27 @@
 
             <!--바로가기-->
             <div class="service">
-                <img class="grapes" src="./logo,img/grapes.png">
-                <img class="service_title" src="./logo,img/바로가기.png">
+                <img class="grapes" src="{% static 'logo,img/grapes.png' %}">
+                <img class="service_title" src="{% static 'logo,img/바로가기.png' %}">
                 <div class="s_inner">
                     <p>지금 바로 장보러 떠나세요!</p>
                     <div class="shopping">
-                        <a href="https://www.coupang.com/"><img class="cp" src="./logo,img/쿠팡_go.png"></a> &nbsp;&nbsp;
-                        <a href="https://www.kurly.com/"><img class="mc" src="./logo,img/마켓컬리_go.png"></a> &nbsp;&nbsp;
-                        <a href="http://www.gmarket.co.kr/"><img class="gm" src="./logo,img/gmarket_go.png"></a>
+                        <a href="https://www.coupang.com/"><img class="cp" src="{% static 'logo,img/쿠팡_go.png' %}"></a> &nbsp;&nbsp;
+                        <a href="https://www.kurly.com/"><img class="mc" src="{% static 'logo,img/마켓컬리_go.png' %}"></a> &nbsp;&nbsp;
+                        <a href="http://www.gmarket.co.kr/"><img class="gm" src="{% static 'logo,img/gmarket_go.png' %}"></a>
                         &nbsp;&nbsp;
-                        <a href="https://emart.ssg.com/"><img class="ssg" src="./logo,img/ssg_go.png"></a>
+                        <a href="https://emart.ssg.com/"><img class="ssg" src="{% static 'logo,img/ssg_go.png' %}"></a>
                     </div>
                 </div>
             </div>
 
             <!--이용문의-->
             <div class="how">
-                <img class="salad" src="./logo,img/salad.png">
-                <img class="how_title" src="./logo,img/이용문의.png">
-                <img class="number" src="./logo,img/number.png">
+                <img class="salad" src="{% static 'logo,img/salad.png' %}">
+                <img class="how_title" src="{% static 'logo,img/이용문의.png' %}">
+                <img class="number" src="{% static 'logo,img/number.png' %}">
                 <br>
-                <img class="h_adress" src="./logo,img/adress.png">
+                <img class="h_adress" src="{% static 'logo,img/adress.png' %}">
             </div>
 
         </div>
