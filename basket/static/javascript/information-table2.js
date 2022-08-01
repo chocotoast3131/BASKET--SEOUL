@@ -13,7 +13,7 @@ function getTable(tab) {
     "&p_product_cls_code=01" +
     "&p_country_code=1101" +
     "&p_convert_kg_yn=N" +
-    "&p_cert_key=d6fc9ea0-9f77-458e-9148-c7021e388cc8" +
+    "&p_cert_key=31a006ec-20bb-4816-b495-f21ad9140c28" +
     "&p_cert_id=222" +
     "&p_returntype=json";
 
