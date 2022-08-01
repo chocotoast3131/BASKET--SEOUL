@@ -1,14 +1,13 @@
 #물가정보/부류별함수
 from api_module import class_func
 from condition import price_code_name
-import numpy as np
 
-df = np.array(class_func(price_code_name(input())))
+df = class_func(price_code_name(input()))
 
 def price_1(df):
     return df
 
 print(price_1(df)) #결과 확인용
 
-#쌀/곡물, 채소, 과일, 수산물 중 필요한 값 / 오늘 날짜, 주말을 제외한 날짜 입력
-#ex)쌀/곡물, 20220729
+#쌀/곡물, 채소, 과일, 수산물 중 필요한 값 입력
+#ex)쌀/곡물
