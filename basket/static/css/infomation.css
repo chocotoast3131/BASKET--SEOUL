@@ -125,53 +125,14 @@ header .header_tiny .tiny_menu>a:hover {
     font-weight: bold;
 }
 
-
-
-/*searchbox*/
-.main_menu li .search-box {
+.main_menu li>.btn5 {
     top: 0;
-    padding: 14px 0px 0px 0px;
-    margin-left: 50px;
-    position: absolute;
-    width: 47px;
-    height: 47px;
-    background-color: #fff;
-    border-radius: 30px;
-    transition: 0.3s;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-right: 50px;
+    border-radius: 50px;
 }
 
-.search-box input {
-    display: none;
-}
-
-.search-box input:hover {
-    display: block;
-}
-
-.main_menu li .search-box:hover {
-    width: 200px;
-    height: 45px;
-    box-shadow: rgba(12, 12, 12, 0.2) 0px 2px 8px 0px;
-}
-
-.main_menu li .value {
-    width: 150px;
-    display: none;
-    position: absolute;
-    padding: 0;
-    margin-left: 10px;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 15px;
-    transition: .3s;
-}
-
-.main_menu li .search-box:hover>.search-txt {
-    display: flex;
-    float: right;
-    width: 250px;
+.main_menu li>.btn5:hover {
+    filter: drop-shadow(0 0 3px rgba(33, 33, 33, .2));
 }
 
 
@@ -357,35 +318,35 @@ input[id="tab04"]:checked~.con4 {
 }
 
 .tab-img-01 {
-    content: url("../logo, img/information_icon/fruits.png");
+    content: url("../logo,img/information_icon/fruits.png");
 }
 
 .tab-img-02 {
-    content: url("../logo, img/information_icon/vegetable.png");
+    content: url("../logo,img/information_icon/vegetable.png");
 }
 
 .tab-img-03 {
-    content: url("../logo, img/information_icon/rice.png");
+    content: url("../logo,img/information_icon/rice.png");
 }
 
 .tab-img-04 {
-    content: url("../logo, img/information_icon/fish.png");
+    content: url("../logo,img/information_icon/fish.png");
 }
 
 input[id="tab01"]:checked+label img {
-    content: url("../logo, img/information_icon/fruits2.png");
+    content: url("../logo,img/information_icon/fruits2.png");
 }
 
 input[id="tab02"]:checked+label img {
-    content: url("../logo, img/information_icon/vegetable2.png");
+    content: url("../logo,img/information_icon/vegetable2.png");
 }
 
 input[id="tab03"]:checked+label img {
-    content: url("../logo, img/information_icon/rice2.png");
+    content: url("../logo,img/information_icon/rice2.png");
 }
 
 input[id="tab04"]:checked+label img {
-    content: url("../logo, img/information_icon/fish2.png");
+    content: url("../logo,img/information_icon/fish2.png");
 }
 
 .conbox table {
@@ -397,6 +358,7 @@ input[id="tab04"]:checked+label img {
 .conbox table th {
     border: 1px solid #ddd;
     padding: 8px;
+    width: 100px;
 }
 
 .conbox table tr:nth-child(even) {
@@ -526,53 +488,52 @@ input[id="tab04"]:checked+label img {
 
 .footer {
     width: 85%;
-    height: 140px;
-    background: #ffecd5;
+    height: 160px;
+    background: #f7f1e7;
+    margin-top: 100px;
     float: right;
     padding: 20px 0px 0px 0px;
-    border-radius: 50px 0px 0px 0px;
-    margin-top: 50px;
-}
-
-.footer .f_wrap {
-    margin-left: 150px;
-}
-
-.footer .tiny_footer {
+    border-radius: 55px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
+  }
+  
+  .footer .f_wrap {
+    margin-left: 80px;
+  }
+  
+  .footer .tiny_footer {
     width: 350px;
     display: flex;
     font-size: 18px;
-}
-
-.footer .tiny_footer .personal {
-    color: #ef6804;
+    margin-top: 20px;
+  }
+  
+  .footer .tiny_footer .personal {
+    color: #247b47;
+    font-weight: bold;
+  }
+  
+  .footer .tiny_footer .email {
     font-weight: 600;
-}
-
-.footer .tiny_footer .email {
-    font-weight: 600;
-}
-
-.footer .tiny_footer a:hover {
+  }
+  
+  .footer .tiny_footer a:hover {
     font-weight: 900;
-}
-
-.footer .wrap2 {
+  }
+  
+  .footer .wrap2 {
     height: 30px;
     display: flex;
-}
-
-.footer .adress {
+  }
+  
+  .footer .adress {
     width: 500px;
-}
-
-.footer .adress p {
+    margin-top: 40px;
+  }
+  
+  .footer .adress p {
     margin-top: 20px;
     font-size: 15px;
     line-height: 10px;
-}
-
-.footer .shopping {
-    position: relative;
-    margin-left: 200px;
-}
+    margin-left: 0;
+  }
