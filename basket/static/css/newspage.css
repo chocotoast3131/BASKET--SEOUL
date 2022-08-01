@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-/*zeroize*/
+/*지마켓산스*/
 @font-face {
     font-family: 'GmarketSans';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -15,7 +15,41 @@
     font-style: normal;
 }
 
-html {    
+/*본고딕*/
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 300;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Light.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Light.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Regular.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Regular.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Regular.otf) format('opentype');
+
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/NotoSansKr/NotoSansKR-Bold.woff2) format('woff2'),
+        url(/fonts/NotoSansKr/NotoSansKR-Bold.woff) format('woff'),
+        url(/fonts/NotoSansKr/NotoSansKR-Bold.otf) format('opentype');
+}
+
+
+
+
+
+/*zeroize*/
+html {
     font-family: 'GmarketSans';
     font-weight: light;
 }
@@ -243,6 +277,8 @@ header .header_tiny .tiny_menu>a:hover {
     width: 1380px;
     height: 1880px;
     margin-left: 300px;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
 }
 
 .allsection .a:hover {
@@ -524,31 +560,34 @@ hr {
 
 
 
+
 /* footer */
 
 .footer {
     width: 85%;
-    height: 140px;
-    background: #ffecd5;
+    height: 160px;
+    background: #f7f1e7;
+    margin-top: 100px;
     float: right;
     padding: 20px 0px 0px 0px;
-    border-radius: 50px 0px 0px 0px;
-    margin-top: 150px;
+    border-radius: 55px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
 }
 
 .footer .f_wrap {
-    margin-left: 150px;
+    margin-left: 80px;
 }
 
 .footer .tiny_footer {
     width: 350px;
     display: flex;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 .footer .tiny_footer .personal {
-    color: #ef6804;
-    font-weight: 600;
+    color: #247b47;
+    font-weight: bold;
 }
 
 .footer .tiny_footer .email {
@@ -566,15 +605,12 @@ hr {
 
 .footer .adress {
     width: 500px;
+    margin-top: 40px;
 }
 
 .footer .adress p {
     margin-top: 20px;
     font-size: 15px;
     line-height: 10px;
-}
-
-.footer .shopping {
-    position: relative;
-    margin-left: 200px;
+    margin-left: 0;
 }
