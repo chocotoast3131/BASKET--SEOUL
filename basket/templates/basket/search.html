@@ -26,28 +26,28 @@
     <header>
         <div class="header_tiny">
             <div class="tiny_menu">
-                <a href="#">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
+                <a href="/">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
             </div>
         </div>
 
         <div class="first">
             <div class="logo">
-                <a href="index.html">
+                <a href="/">
                     <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
                 </a>
             </div>
 
             <div class="lnb">
                 <ul class="main_menu">
-                    <li><a href="information.html" class="btn1">물가정보</a></li>
+                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
 
-                    <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
+                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
 
-                    <li><a href="sale.html" class="btn3">할인정보</a></li>
+                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
 
-                    <li><a href="Q&A.html" class="btn4">고객센터</a></li>
+                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
 
-                    <li><a href="search.html" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+                    <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
 
                 </ul>
             </div>
