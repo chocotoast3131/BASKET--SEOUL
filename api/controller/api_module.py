@@ -30,7 +30,7 @@ def class_func(res_json): # 부류별
     for class_ in res_json['data']['item']: #사용할 key만 가져옴
         res_class_ = { \
             "item_name": class_["item_name"], \
-            "kind_name": class_["kind_name"], \
+            # "kind_name": class_["kind_name"], \
             "unit": class_["unit"], \
             "today": class_["dpr1"], \
             "past_month": class_["dpr5"], \
