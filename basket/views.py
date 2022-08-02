@@ -21,3 +21,6 @@ def QnA(request):
 
 def sitemap(request):
     return render(request, 'basket/sitemap.html')
+
+def search(request):
+    return render(request, 'basket/search.html')

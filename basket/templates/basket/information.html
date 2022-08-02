@@ -1,131 +1,123 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <title>물가정보 - 바스켓 'SEOUL</title>
-    <link rel="shortcut icon" type="image⁄x-icon" href="./logo,img/webicon2.png">
+  <meta charset="UTF-8">
+  <title>물가정보 - 바스켓 'SEOUL</title>
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
 
-    <!--font-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
+  <!--font-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
 
-    <!--javascript-->
-    <script src="./javascript/jquery-1.12.4.js"></script>
-    <script src="./javascript/custom.js"></script>
-    <!--<script src="./javascript/information_table1.js"></script>-->
-    <script src="./javascript/information-table2.js"></script>
+  <!--javascript-->
+  <script src="{% static 'javascript/jquery-3.6.0.min.js' %}"></script>
+  <script src="{% static 'javascript/custom.js' %}"></script>
+  <script src="{% static 'javascript/information-table2.js' %}"></script>
 
-    <!--css-->
-    <link rel="stylesheet" href="./css/infomation.css">
+  <!--css-->
+  <link rel="stylesheet" href="{% static 'css/infomation.css' %}">
 </head>
 
 <body>
 
-    <!-- nav -->
-    <header>
-        <div class="header_tiny">
-            <div class="tiny_menu">
-                <a href="index.html">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
-            </div>
-        </div>
-
-        <div class="first">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="./logo,img/logo/Logo.png" alt="logo">
-                </a>
-            </div>
-
-            <div class="lnb">
-                <ul class="main_menu">
-                    <li><a href="information.html" class="btn1">물가정보</a></li>
-
-                    <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
-
-                    <li><a href="sale.html" class="btn3">할인정보</a></li>
-
-                    <li><a href="Q&A.html" class="btn4">고객센터</a></li>
-
-                    <li><a href="search.html" class="btn5"><img src="./logo,img/돋보기.png"></a></li>
-
-                </ul>
-            </div>
-        </div>
-    </header>
-
-
-
-    <!--nav_bottom-->
-    <div class="nav_bottom">
-        <i class="fas fa-home"></i> &nbsp;
-        <i class="fa-solid fa-angle-right"></i> &nbsp;
-        <span class="allmenu">물가정보</span>
-    </div>
-
-
-    <!--section part-->
-
-    <body>
-
-        <div class="title">
-            <img src="./logo,img/물가정보 로고.png">
-        </div>
-
-        <div class="tabs">
-            <input type="radio" name="tabmenu" id="tab01" checked>
-            <label for="tab01"><img class="tab-img-01"><br>과일</label>
-
-            <input type="radio" name="tabmenu" id="tab02">
-            <label for="tab02"><img class="tab-img-02"><br>채소</label>
-
-            <input type="radio" name="tabmenu" id="tab03">
-            <label for="tab03"><img class="tab-img-03"><br>쌀/잡곡</label>
-
-            <input type="radio" name="tabmenu" id="tab04">
-            <label for="tab04"><img class="tab-img-04"><br>수산물</label>
-
-            <div class="conbox con1">
-                <table id="con1_table">
-                </table>
-            </div>
-
-            <div class="conbox con2">
-                <table id="con2_table">
-                </table>
-            </div>
-
-            <div class="conbox con3">
-                <table id="con3_table">
-                </table>
-            </div>
-
-            <div class="conbox con4">
-                <table id="con4_table">
-                </table>
-            </div>
-        </div>
-    </body>
-
-
-    <!-- footer -->
-    <div class="footer">
-        <div class="f_wrap">
-            <div class="wrap2">
-                <div class="tiny_footer">
-                    <a class="personal" href="#">개인정보처리방침</a>
-                    &nbsp;·&nbsp;
-                    <a class="email" href="#">이메일무단수집거부</a>
-                </div>
-            </div>
-            <div class="adress">
-                <p>서울 서초구 바우뫼로20길 8 &nbsp;&nbsp;&nbsp; 대표전화 : 02-1234-5678</p>
-                <p>COPYRIGHT © 바스켓 서울. ALL RIGHTS RESEVED.</p>
-            </div>
+  <!-- nav -->
+  <header>
+    <div class="header_tiny">
+        <div class="tiny_menu">
+            <a href="/">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
         </div>
     </div>
+
+    <div class="first">
+        <div class="logo">
+            <a href="/">
+                <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
+            </a>
+        </div>
+
+        <div class="lnb">
+            <ul class="main_menu">
+                <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
+
+                <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
+
+                <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
+
+                <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
+
+                <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+
+  <!--nav_bottom-->
+  <div class="nav_bottom">
+    <i class="fas fa-home"></i> &nbsp;
+    <i class="fa-solid fa-angle-right"></i> &nbsp;
+    <span class="allmenu">물가정보</span>
+  </div>
+
+
+  <!--section part-->
+
+  <body>
+
+    <div class="title">
+      <img src="{% static 'logo,img/물가정보 로고.png' %}">
+    </div>
+
+    <div class="tabs">
+      <input type="radio" name="tabmenu" id="tab01" onclick="getTable(this.id);" checked>
+      <label for="tab01"><img class="tab-img-01"><br>과일</label>
+
+      <input type="radio" name="tabmenu" id="tab02" onclick="getTable(this.id);">
+      <label for="tab02"><img class="tab-img-02"><br>채소</label>
+
+      <input type="radio" name="tabmenu" id="tab03" onclick="getTable(this.id);">
+      <label for="tab03"><img class="tab-img-03"><br>쌀/잡곡</label>
+
+      <input type="radio" name="tabmenu" id="tab04" onclick="getTable(this.id);">
+      <label for="tab04"><img class="tab-img-04"><br>수산물</label>
+
+      <div class="conbox">
+        <table id="table">
+          <thead>
+            <tr>
+              <th>품목명</th>
+              <th>품종명</th>
+              <th>단위</th>
+              <th>현재가</th>
+              <th>한달전</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+
+
+  <!-- footer -->
+  <div class="footer">
+    <div class="f_wrap">
+      <div class="wrap2">
+        <div class="tiny_footer">
+          <a class="personal" href="#">개인정보처리방침</a>
+          &nbsp;·&nbsp;
+          <a class="email" href="#">이메일무단수집거부</a>
+        </div>
+      </div>
+      <div class="adress">
+        <p>서울 서초구 바우뫼로20길 8 &nbsp;&nbsp;&nbsp; 대표전화 : 02-1234-5678</p>
+        <p>COPYRIGHT © 바스켓 서울. ALL RIGHTS RESEVED.</p>
+      </div>
+    </div>
+  </div>
 </body>
-
 </html>

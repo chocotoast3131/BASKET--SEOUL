@@ -22,4 +22,4 @@ def Detailed(df):
 print(Detailed(df)) #결과 확인용
 
 #품목코드, 품종코드 입력. 날짜는 일주일 간격으로 출력됨
-#ex) 111, 01
+#ex) 111, 01, 쌀
