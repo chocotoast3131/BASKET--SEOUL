@@ -1,8 +1,14 @@
 #물가정보/부류별함수
 from api_module import class_func
 from condition import price_code_name
+import pandas as pd
 
-df = class_func(price_code_name(input()))
+df = pd.DataFrame(class_func(price_code_name(input())))
+
+# index1 = df[df['today'] == '-'].index
+# index2 = df[df['past_month'] == '-'].index
+# df.loc[index1, 'today'] = '0'
+# df.loc[index2, 'past_month'] = '0'
 
 def price_1(df):
     return df
