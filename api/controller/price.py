@@ -3,7 +3,8 @@ from api_module import class_func
 from condition import price_code_name
 import pandas as pd
 
-df = pd.DataFrame(class_func(price_code_name(input())))
+code = input()
+df = pd.DataFrame(class_func(price_code_name(code)))
 
 # index1 = df[df['today'] == '-'].index
 # index2 = df[df['past_month'] == '-'].index
