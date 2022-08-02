@@ -1,6 +1,7 @@
 import requests
 import json
 import numpy as np
+import pandas as pd
 
 def open_api(**kwargs): #함수 정의할 때 사용.
     url = 'http://www.kamis.or.kr/service/price/xml.do'
@@ -68,4 +69,3 @@ def f_item__(p_itemcode, p_kindcode, p_startday, p_endday, p_productclscode='01'
         action='periodProductList')
     
 # print(np.array(class_func(f_class__('100', '20220701')))) #p_item_category_code, p_regday
-# print(np.array(item_func(f_item__('111', '01', '2022-07-01', '2022-07-04'))))
