@@ -1,23 +1,15 @@
-from api_module import f_class__
-from datetime import date, timedelta
+from .api_module import f_class__
 
 def price_code_name(code):
-
-    day = date.today() - timedelta(1) #당일 데이터는 없기 때문에 전날을 기준으로 함
-    
-    if day.weekday() == 5: #오늘이 토(5), 일(6)이라면 day를 금(4)요일로 만든다.
-        day -= timedelta(1)
-    elif day.weekday() == 6:
-        day -= timedelta(2)
-
+    global today 
+    today = '20220729' #필요한 날로 수정가능
     match(code):
-        case "쌀/곡물":
-            code_print = f_class__('100', day)
+        case "쌀/잡곡":
+            code_print = f_class__('100', today)
         case "채소":
-            code_print = f_class__('200', day)
+            code_print = f_class__('200', today)
         case "과일":
-            code_print = f_class__('400', day)
+            code_print = f_class__('400', today)
         case "수산물":
-            code_print = f_class__('600', day)
+            code_print = f_class__('600', today)
     return code_print
-    
