@@ -6,9 +6,8 @@ import pandas as pd
 itemcode = input() #품목코드
 kindcode = input()
 day = date.today() - timedelta(1)
-last_week = day - timedelta(weeks=1)
 
-df = pd.DataFrame(item_func(f_item__(itemcode, kindcode, last_week, day))) #식량작물, 채소류, 과일류, 수산물 중 필요한 값을 터미널에 입력
+df = pd.DataFrame(item_func(f_item__(itemcode, kindcode, day, day))) #식량작물, 채소류, 과일류, 수산물 중 필요한 값을 터미널에 입력
 
 value_name = input()
 index1 = df[df['itemname'] != value_name].index
@@ -16,8 +15,8 @@ df = df.drop(index1) #빈 값의 인덱스를 찾으려 했으나 None, '', "", 
 #{'itemname': [], 'kindname': [], 'marketname': [], 'today': '07/25', 'price': '48,943'} <- 이와 같은 빈 항목들 제거
 #drop을 사용하기 위해 pandas 사용 / df를 데이터프레임으로 만들었음
 
-def Detailed(df):
-    return df
+def Detailed(df1):
+    return df1
 
 print(Detailed(df)) #결과 확인용
 
