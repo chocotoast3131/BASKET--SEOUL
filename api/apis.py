@@ -1,11 +1,10 @@
 from django.http import JsonResponse
-from .controller.condition import price_code_name
-from .controller.Detailed_price import Detailed
 
+from api.controller.price import price_1
 
 def get_price_code(request): # 부류 요청값 받아서 부류별 json데이터로 출력 
     code = request.GET.get("code")
-    res_json = price_code_name(code)
+    res_json = price_1(code)
     return JsonResponse(res_json)
 
 # def get_detail(request):
