@@ -5,11 +5,7 @@ import pandas as pd
 
 code = input()
 df = pd.DataFrame(class_func(price_code_name(code)))
-
-# index1 = df[df['today'] == '-'].index
-# index2 = df[df['past_month'] == '-'].index
-# df.loc[index1, 'today'] = '0'
-# df.loc[index2, 'past_month'] = '0'
+#Detailed_price.py에서 pd.DataFrame을 사용해서 관리하기 편하도록 price도 DateFrame 활용
 
 def price_1(df):
     return df
