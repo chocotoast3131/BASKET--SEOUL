@@ -1,6 +1,7 @@
 import requests
 import json
 import numpy as np
+import pandas as pd
 
 def open_api(**kwargs): #함수 정의할 때 사용.
     url = 'http://www.kamis.or.kr/service/price/xml.do'
@@ -33,8 +34,6 @@ def class_func(res_json): # 부류별
             "unit": class_["unit"], \
             "today": class_["dpr1"], \
             "past_month": class_["dpr5"], \
-            # "diff_month": (format((int(''.join(map(str, class_['dpr1'])).replace(",", ""))) - (int(''.join(map(str, class_['dpr5'])).replace(",", ""))), ',')), \
-            # ㄴ'-' 를 어떻게 해결? np.where, while?? 고민
         }
         res_class_f.append(res_class_)
     return res_class_f
@@ -66,6 +65,4 @@ def f_item__(p_itemcode, p_kindcode, p_startday, p_endday, p_productclscode='01'
     return open_api(p_itemcode=p_itemcode, p_startday=p_startday, p_endday=p_endday, p_kindcode=p_kindcode, \
         p_productclscode=p_productclscode, p_countrycode=p_countrycode, p_productrankcode=p_productrankcode, \
         action='periodProductList')
-    
-# print(np.array(class_func(f_class__('100', '20220701')))) #p_item_category_code, p_regday
-# print(np.array(item_func(f_item__('111', '01', '2022-07-01', '2022-07-04'))))
+        
