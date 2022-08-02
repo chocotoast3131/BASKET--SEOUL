@@ -1,4 +1,4 @@
-from api_module import f_class__
+from .api_module import f_class__
 from datetime import date, timedelta
 
 def price_code_name(code):
@@ -20,3 +20,4 @@ def price_code_name(code):
         case "수산물":
             code_print = f_class__('600', day)
     return code_print
+
