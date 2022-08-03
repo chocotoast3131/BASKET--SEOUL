@@ -1,7 +1,7 @@
 from api_module import f_class__
 from datetime import date, timedelta
 
-def price_code_name(code):
+def price_code_name(name):
     
     day = date.today() - timedelta(1) #당일 데이터는 없기 때문에 전날을 기준으로 함
     
@@ -10,9 +10,7 @@ def price_code_name(code):
     elif day.weekday() == 6:
         day -= timedelta(2)
     
-    global code_print
-    
-    match(code):
+    match(name):
         case "쌀/잡곡":
             code_print = f_class__('100', day)
         case "채소":
