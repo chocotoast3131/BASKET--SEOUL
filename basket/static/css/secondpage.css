@@ -15,7 +15,11 @@
     font-style: normal;
 }
 
+<<<<<<< HEAD
 html {
+=======
+html {    
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     font-family: 'GmarketSans';
     font-weight: light;
 }
@@ -244,6 +248,7 @@ header .header_tiny .tiny_menu>a:hover {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* left_menu */
 .l_menu {
     float: left;
@@ -399,6 +404,9 @@ header .header_tiny .tiny_menu>a:hover {
     background-color: #ef6804;
     color: white;
 }
+=======
+
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 
 
 
@@ -417,6 +425,7 @@ header .header_tiny .tiny_menu>a:hover {
     padding: 20px 0px 0px 0px;
     border-radius: 55px 0px 0px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
+<<<<<<< HEAD
 }
 
 .footer .f_wrap {
@@ -424,10 +433,20 @@ header .header_tiny .tiny_menu>a:hover {
 }
 
 .footer .tiny_footer {
+=======
+  }
+  
+  .footer .f_wrap {
+    margin-left: 80px;
+  }
+  
+  .footer .tiny_footer {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     width: 350px;
     display: flex;
     font-size: 18px;
     margin-top: 20px;
+<<<<<<< HEAD
 }
 
 .footer .tiny_footer .personal {
@@ -454,8 +473,40 @@ header .header_tiny .tiny_menu>a:hover {
 }
 
 .footer .adress p {
+=======
+  }
+  
+  .footer .tiny_footer .personal {
+    color: #247b47;
+    font-weight: bold;
+  }
+  
+  .footer .tiny_footer .email {
+    font-weight: 600;
+  }
+  
+  .footer .tiny_footer a:hover {
+    font-weight: 900;
+  }
+  
+  .footer .wrap2 {
+    height: 30px;
+    display: flex;
+  }
+  
+  .footer .adress {
+    width: 500px;
+    margin-top: 40px;
+  }
+  
+  .footer .adress p {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     margin-top: 20px;
     font-size: 15px;
     line-height: 10px;
     margin-left: 0;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
