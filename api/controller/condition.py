@@ -9,7 +9,9 @@ def price_code_name(code):
         day -= timedelta(1)
     elif day.weekday() == 6:
         day -= timedelta(2)
-
+    
+    global code_print
+    
     match(code):
         case "쌀/잡곡":
             code_print = f_class__('100', day)
