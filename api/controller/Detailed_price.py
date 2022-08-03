@@ -2,6 +2,7 @@
 from api_module import f_item__, item_func
 from datetime import date, timedelta
 import pandas as pd
+import json
 
 itemcode = input() #품목코드
 kindcode = input()
@@ -16,11 +17,10 @@ df_drop = df.drop(index1) #빈 값의 인덱스를 찾으려 했으나 None, '',
 #drop을 사용하기 위해 pandas 사용 / df를 데이터프레임으로 만들었음
 
 df_json = df_drop.to_json(orient = 'records') 
+df_dict = json.loads(df_json)
 
-def Detailed(df_json):
-    return df_json
-
-print(pd.read_json(Detailed(df_json))) #결과 확인용/json파일을 데이터프레임으로 출력함
+def Detailed(df_dict):
+    return df_dict
 
 #품목코드, 품종코드 입력
 #ex) 111, 01, 쌀
