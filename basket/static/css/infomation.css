@@ -252,8 +252,12 @@ header .header_tiny .tiny_menu > a:hover {
   height: 800px;
   text-align: center;
   margin-top: 50px;
+<<<<<<< HEAD
   margin-left: 350px;
   padding-left: 50px;
+=======
+  margin-left: 380px;
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 }
 
 input[type="radio"] {
@@ -272,14 +276,27 @@ input[type="radio"] + label {
 
 .conbox {
   width: 1280px;
+<<<<<<< HEAD
   height: 1000px;
   margin-top: 50px;
+=======
+  height: 400px;
+  /* display: none; */
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   overflow-y: scroll;
   text-align: center;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+<<<<<<< HEAD
 }
 
+.conbox::-webkit-scrollbar {
+  display: none;
+}
+
+input[id="tab01"]:checked ~ .con1 {
+=======
+}
 .conbox::-webkit-scrollbar {
   display: none;
 }
@@ -292,12 +309,25 @@ input[id="tab01"]:checked ~ .con1 {
 }
 
 input[id="tab02"]:checked ~ .con2 {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   display: block;
   margin-left: 50px;
   margin-top: 50px;
   width: 1280px;
 }
 
+<<<<<<< HEAD
+input[id="tab02"]:checked ~ .con2 {
+=======
+input[id="tab03"]:checked ~ .con3 {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
+  display: block;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 1280px;
+}
+
+<<<<<<< HEAD
 input[id="tab03"]:checked ~ .con3 {
   display: block;
   margin-left: 50px;
@@ -305,6 +335,8 @@ input[id="tab03"]:checked ~ .con3 {
   width: 1280px;
 }
 
+=======
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 input[id="tab04"]:checked ~ .con4 {
   display: block;
   margin-left: 50px;
@@ -460,16 +492,22 @@ input[id="tab04"]:checked + label img {
   color: white;
 }
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 /* footer */
 
 .footer {
   width: 85%;
   height: 160px;
+<<<<<<< HEAD
   bottom: 0;
+=======
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   background: #f7f1e7;
   margin-top: 100px;
   float: right;
