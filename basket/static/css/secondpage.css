@@ -15,7 +15,11 @@
     font-style: normal;
 }
 
+<<<<<<< HEAD
+html {
+=======
 html {    
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     font-family: 'GmarketSans';
     font-weight: light;
 }
@@ -244,7 +248,165 @@ header .header_tiny .tiny_menu>a:hover {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
+/* left_menu */
+.l_menu {
+    float: left;
+    background-color: #fff;
+    width: 150px;
+    height: 3110px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+}
 
+.left_logo .bgo {
+    margin-top: 20%;
+    margin-left: 55px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left_logo .second_hr {
+    margin-left: 53px;
+    margin-top: 15px;
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+    border: 0;
+}
+
+.l_menu .left {
+    margin-top: 15px;
+    color: black;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.left_m li>.fruit:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left_m li>.vegetables:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left_m li>.rice:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.left_m li>.fish:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* sub_menu */
+.left .left_m .sub_menu {
+    transition: all .3s;
+}
+
+.left .left_m .sub_menu>a {
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 35px;
+}
+
+.left_m li:hover a {
+    font-weight: bold;
+}
+
+.left_m a:hover {
+    text-decoration: underline;
+}
+
+.left_m .sub_menu {
+    display: none;
+}
+
+.left_m li:hover .sub_menu {
+    display: block;
+}
+
+
+
+
+
+
+
+/*conbox*/
+
+.title {
+    margin-left: 1005px;
+    margin-top: 50px;
+}
+
+.tabs {
+    width: 1380px;
+    height: 800px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 170px;
+    padding-left: 50px;
+}
+
+.conbox {
+    width: 100%;
+    height: 1000px;
+    margin-top: 50px;
+    margin-left: 150px;
+    overflow-y: scroll;
+    text-align: center;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.conbox::-webkit-scrollbar {
+    display: none;
+}
+
+.conbox table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.conbox table td,
+.conbox table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100px;
+}
+
+.conbox table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.conbox table tr:hover {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.conbox table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #ef6804;
+    color: white;
+}
+=======
+
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 
 
 
@@ -263,6 +425,15 @@ header .header_tiny .tiny_menu>a:hover {
     padding: 20px 0px 0px 0px;
     border-radius: 55px 0px 0px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;
+<<<<<<< HEAD
+}
+
+.footer .f_wrap {
+    margin-left: 80px;
+}
+
+.footer .tiny_footer {
+=======
   }
   
   .footer .f_wrap {
@@ -270,10 +441,39 @@ header .header_tiny .tiny_menu>a:hover {
   }
   
   .footer .tiny_footer {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     width: 350px;
     display: flex;
     font-size: 18px;
     margin-top: 20px;
+<<<<<<< HEAD
+}
+
+.footer .tiny_footer .personal {
+    color: #247b47;
+    font-weight: bold;
+}
+
+.footer .tiny_footer .email {
+    font-weight: 600;
+}
+
+.footer .tiny_footer a:hover {
+    font-weight: 900;
+}
+
+.footer .wrap2 {
+    height: 30px;
+    display: flex;
+}
+
+.footer .adress {
+    width: 500px;
+    margin-top: 40px;
+}
+
+.footer .adress p {
+=======
   }
   
   .footer .tiny_footer .personal {
@@ -300,8 +500,13 @@ header .header_tiny .tiny_menu>a:hover {
   }
   
   .footer .adress p {
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
     margin-top: 20px;
     font-size: 15px;
     line-height: 10px;
     margin-left: 0;
+<<<<<<< HEAD
+}
+=======
   }
+>>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486

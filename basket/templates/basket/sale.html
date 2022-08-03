@@ -1,11 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <title>할인정보 - 바스켓 'SEOUL</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
+    <title>GS25:할인정보 - 바스켓 'SEOUL</title>
+    <link rel="shortcut icon" type="image⁄x-icon" href="./logo,img/webicon2.png">
 
     <!--font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -14,11 +13,11 @@
     <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
 
     <!--javascript-->
-    <script src="{% static 'javascript/jquery-1.12.4.js' %}"></script>
-    <script src="{% static 'javascript/custom.js' %}"></script>
+    <script src="./javascript/jquery-1.12.4.js"></script>
+    <script src="./javascript/custom.js"></script>
 
     <!--css-->
-    <link rel="stylesheet" href="{% static 'css/sale.css' %}">
+    <link rel="stylesheet" href="./css/sale.css">
 </head>
 
 <body>
@@ -27,28 +26,28 @@
     <header>
         <div class="header_tiny">
             <div class="tiny_menu">
-                <a href="/">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
+                <a href="index.html">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
             </div>
         </div>
 
         <div class="first">
             <div class="logo">
-                <a href="/">
-                    <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
+                <a href="index.html">
+                    <img src="./logo,img/logo/Logo.png" alt="logo">
                 </a>
             </div>
 
             <div class="lnb">
                 <ul class="main_menu">
-                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
+                    <li><a href="information.html" class="btn1">물가정보</a></li>
 
-                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
+                    <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
 
-                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
+                    <li><a href="sale.html" class="btn3">할인정보</a></li>
 
-                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
+                    <li><a href="Q&A.html" class="btn4">고객센터</a></li>
 
-                    <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+                    <li><a href="search.html" class="btn5"><img src="./logo,img/돋보기.png"></a></li>
 
                 </ul>
             </div>
@@ -73,15 +72,15 @@
 
         <!--title-->
         <div class="title">
-            <img src="{% static 'logo,img/gs25logo.png' %}">
+            <img src="./logo,img/gs25logo.png">
         </div>
 
         <!--left-->
         <div class="depth3Lnb">
             <ul class="eventInfo">
                 <li class="eventInfo_01"><a href="sale.html">GS25</a></li>
-                <li class="eventInfo_02"><a href="secondpage/sale-secondpage/7-Eleven.html">7-ELEVEN</a></li>
-                <li class="eventInfo_03"><a href="secondpage/sale-secondpage/CU.html">CU</a></li>
+                <li class="eventInfo_02"><a href="7-Eleven.html">7-ELEVEN</a></li>
+                <li class="eventInfo_03"><a href="CU.html">CU</a></li>
             </ul>
         </div>
 
@@ -90,46 +89,49 @@
         <!--상품-->
         <ul class="list1">
 
-            <li class="prod_list">
+            <div class="prod_list">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/씨그램레몬.jpg' %}" alt="8801047161677.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/씨그램레몬.jpg" alt="8801047161677.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>코카)씨그램레몬탄산수350ML</p>
+                                <p>씨그램레몬탄산수350ML</p>
                             </div>
                             <div class="price"><strong>1,500</strong><span class="won">원</span></div>
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list" style="width: 236px;">
+            <div class="prod_list" style="width: 236px;">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/씨그램라임.jpg' %}" alt="8801094202606.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/씨그램라임.jpg" alt="8801094202606.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>코카)씨그램라임탄산수350ML</p>
+                                <p>씨그램라임탄산수350ML</p>
                             </div>
                             <div class="price"><strong>1,500</strong><span class="won">원</span></div>
                         </div>
                     </div>
-
                 </a>
-            </li>
+                </li>
+            </div>
 
-            <li class="prod_list" style="width: 236px;">
+            <div class="prod_list" style="width: 236px;">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/녹차녹차돌자반.jpg' %}" alt="8806371301614.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/녹차녹차돌자반.jpg" alt="8806371301614.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -140,13 +142,14 @@
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list">
+            <div class="prod_list">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/파래파래돌자반.jpg' %}" alt="8801123103454.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/파래파래돌자반.jpg" alt="8801123103454.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -157,48 +160,51 @@
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list">
+            <div class="prod_list">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/끌레도르딥초콜릿.jpg' %}" alt="8801047161677.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/끌레도르딥초콜릿.jpg" alt="8801047161677.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>빙그레)끌레도르딥초콜릿90ML</p>
+                                <p>비타500로열폴리스120ML</p>
+                            </div>
+                            <div class="price"><strong>1,500</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list" style="width: 236px;">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/끌레도르설향딸기.jpg" alt="8801094202606.jpg" class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>끌레도르설향딸기90ML</p>
                             </div>
                             <div class="price"><strong>4,300</strong><span class="won">원</span></div>
                         </div>
                     </div>
                 </a>
-            </li>
+                </li>
+            </div>
 
-            <li class="prod_list" style="width: 236px;">
+            <div class="prod_list" style="width: 236px;">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/끌레도르설향딸기.jpg' %}" alt="8801094202606.jpg" class="prod_img">
-                            <!-- 상품 이미지 -->
-                        </div>
-                        <div class="prod_text">
-                            <div class="name">
-                                <p>빙그레)끌레도르설향딸기90ML</p>
-                            </div>
-                            <div class="price"><strong>4,300</strong><span class="won">원</span></div>
-                        </div>
-                    </div>
-
-                </a>
-            </li>
-
-            <li class="prod_list" style="width: 236px;">
-                <a class="prod_item">
-                    <div class="prod_wrap">
-                        <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/바삭바삭대추.jpg' %}" alt="8806371301614.jpg" class="prod_img">
+                            <img src="./logo,img/gs25/1+1/바삭바삭대추.jpg" alt="8806371301614.jpg" class="prod_img">
                             <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -209,65 +215,69 @@
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list">
+            <div class="prod_list">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/GD_8804645006098_001.jpg' %}" alt="8801123103454.jpg"
+                            <img src="./logo,img/gs25/1+1/GD_8804645006098_001.jpg" alt="8801123103454.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>맥널티)자몽아이스티제로500ML</p>
+                                <p>자몽아이스티제로500ML</p>
                             </div>
                             <div class="price"><strong>2,000</strong><span class="won">원</span></div>
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list">
+            <div class="prod_list">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/GD_8804645006104_001.jpg' %}" alt="8801047161677.jpg"
+                            <img src="./logo,img/gs25/1+1/GD_8804645006104_001.jpg" alt="8801047161677.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>맥널티)복숭아아이스티제로500ML</p>
+                                <p>복숭아아이스티제로500ML</p>
                             </div>
                             <div class="price"><strong>2,000</strong><span class="won">원</span></div>
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
 
-            <li class="prod_list" style="width: 236px;">
+            <div class="prod_list" style="width: 236px;">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/GD_8859103400055_001.jpg' %}" alt="8801094202606.jpg"
+                            <img src="./logo,img/gs25/1+1/GD_8859103400055_001.jpg" alt="8801094202606.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
                             <div class="name">
-                                <p>나이프라몽)전갱이포3500[D2]</p>
+                                <p>전갱이포3500</p>
                             </div>
                             <div class="price"><strong>3,500</strong><span class="won">원</span></div>
                         </div>
                     </div>
-
                 </a>
-            </li>
+                </li>
+            </div>
 
-            <li class="prod_list" style="width: 236px;">
+            <div class="prod_list" style="width: 236px;">
                 <a class="prod_item">
                     <div class="prod_wrap">
+                        <span class="plus1">1+1</span>
                         <div class="prod_img">
-                            <img src="{% static 'logo,img/gs25/1+1/GD_8809677721063_002.jpg' %}" alt="8806371301614.jpg"
+                            <img src="./logo,img/gs25/1+1/GD_8809677721063_002.jpg" alt="8806371301614.jpg"
                                 class="prod_img"> <!-- 상품 이미지 -->
                         </div>
                         <div class="prod_text">
@@ -278,7 +288,178 @@
                         </div>
                     </div>
                 </a>
-            </li>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_4895230503478_002.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>미니언즈판박이젤리60G</p>
+                            </div>
+                            <div class="price"><strong>2,000</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_4895230503409_002.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>월리판박이젤리60G</p>
+                            </div>
+                            <div class="price"><strong>2,000</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_8809786290115_001.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>마라오징어30G</p>
+                            </div>
+                            <div class="price"><strong>3,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_8809786290146_001.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>버터오징어30G</p>
+                            </div>
+                            <div class="price"><strong>3,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_8809786290153_002.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>쯔란오징어30G</p>
+                            </div>
+                            <div class="price"><strong>3,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_3415581105292_294.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>딸기파인트</p>
+                            </div>
+                            <div class="price"><strong>13,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_3415581119299_301.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>마카다미아파인트</p>
+                            </div>
+                            <div class="price"><strong>13,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_3415581126297_299.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>녹차파인트</p>
+                            </div>
+                            <div class="price"><strong>13,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="prod_list">
+                <a class="prod_item">
+                    <div class="prod_wrap">
+                        <span class="plus2">2+1</span>
+                        <div class="prod_img">
+                            <img src="./logo,img/gs25/1+1/GD_3415582304298_001.jpg" alt="8801047161677.jpg"
+                                class="prod_img">
+                            <!-- 상품 이미지 -->
+                        </div>
+                        <div class="prod_text">
+                            <div class="name">
+                                <p>바닐라라즈베리파인트</p>
+                            </div>
+                            <div class="price"><strong>13,900</strong><span class="won">원</span></div>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
         </ul>
     </div>
