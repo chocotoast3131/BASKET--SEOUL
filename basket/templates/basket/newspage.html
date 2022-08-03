@@ -1,11 +1,10 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <title>뉴스기사 - 바스켓 'SEOUL</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
+    <link rel="shortcut icon" type="image⁄x-icon" href="./logo,img/webicon2.png">
 
     <!--font-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
@@ -14,11 +13,11 @@
     <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
 
     <!--javascript-->
-    <script src="{% static 'javascript/jquery-1.12.4.js' %}"></script>
-    <script src="{% static 'javascript/custom.js' %}"></script>
+    <script src="./javascript/jquery-1.12.4.js"></script>
+    <script src="./javascript/custom.js"></script>
 
     <!--css-->
-    <link rel="stylesheet" href="{% static 'css/newspage.css' %}">
+    <link rel="stylesheet" href="./css/newspage.css">
 </head>
 
 <body>
@@ -27,28 +26,28 @@
     <header>
         <div class="header_tiny">
             <div class="tiny_menu">
-                <a href="/">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
+                <a href="index.html">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
             </div>
         </div>
 
         <div class="first">
             <div class="logo">
-                <a href="/">
-                    <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
+                <a href="index.html">
+                    <img src="./logo,img/logo/Logo.png" alt="logo">
                 </a>
             </div>
 
             <div class="lnb">
                 <ul class="main_menu">
-                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
+                    <li><a href="information.html" class="btn1">물가정보</a></li>
 
-                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
+                    <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
 
-                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
+                    <li><a href="sale.html" class="btn3">할인정보</a></li>
 
-                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
+                    <li><a href="Q&A.html" class="btn4">고객센터</a></li>
 
-                    <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+                    <li><a href="search.html" class="btn5"><img src="./logo,img/돋보기.png"></a></li>
 
                 </ul>
             </div>
@@ -73,7 +72,7 @@
 
         <!--title-->
         <div class="title">
-            <img src="{% static 'logo,img/뉴스기사 로고.png' %}">
+            <img src="./logo,img/뉴스기사로고.png">
         </div>
 
 
@@ -95,70 +94,70 @@
                 <a href="#none">
                     <p class="first_1">국내 수출기업 절반 이상 "ESG 미흡으로 계약·수주 파기 위기감 느껴"</p>
                 </a>
-                <img class="ss1" src="{% static 'logo,img/news/1.png' %}" width="182px" height="112px">
+                <img class="ss1" src="./logo,img/news/1.png" width="182px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="second">
                 <p class="second_2">경총 "불법행위 대우조선 하청노조에 공권력 집행 나서야"</p>
-                <img class="ss2" src="{% static 'logo,img/news/2.jpg' %}" width="202px" height="112px">
+                <img class="ss2" src="./logo,img/news/2.jpg" width="202px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="third">
                 <p class="third_3">테슬라 독주 벌써 끝나나...벤츠·BMW 수입 전기차 '맹추격'</p>
-                <img class="ss2" src="{% static 'logo,img/news/3.jpg' %}" width="182px" height="112px">
+                <img class="ss2" src="./logo,img/news/3.jpg" width="182px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="fourth">
                 <p class="fourth_4">LG가 만든 AI 디자이너 '틸다', 세계 3대 광고제에서 금·은 수상</p>
-                <img class="ss4" src="{% static 'logo,img/news/4.jpg' %}" width="235px" height="112px">
+                <img class="ss4" src="./logo,img/news/4.jpg" width="235px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="fifth">
                 <p class="fifth_5">국가전략기술 외국인투자 지원 확대…투자금의 최대 50%</p>
-                <img class="ss2" src="{% static 'logo,img/news/5.jpg' %}" width="182px" height="112px">
+                <img class="ss2" src="./logo,img/news/5.jpg" width="182px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="sixth">
                 <p class="sixth_6">19일 만나는 추경호·옐런, '통화스와프' 논의 여부에 촉각</p>
-                <img class="ss6" src="{% static 'logo,img/news/6.jpg' %}" width="235px" height="112px">
+                <img class="ss6" src="./logo,img/news/6.jpg" width="235px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="seven">
                 <p class="seven_7">"천연가스발 침체 우려 커지는 EU... 내년 마이너스 성장 가능성"</p>
-                <img class="ss7" src="{% static 'logo,img/news/7.jpg' %}" width="230px" height="112px">
+                <img class="ss7" src="./logo,img/news/7.jpg" width="230px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="eight">
                 <p class="eight_8">BMW 전기차 시대 이끈 'i3', 홈런 에디션으로 끝맺는다</p>
-                <img class="ss8" src="{% static 'logo,img/news/8.jpg' %}" width="235px" height="112px">
+                <img class="ss8" src="./logo,img/news/8.jpg" width="235px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="nine">
                 <p class="nine_9">IMF, 세계경제 추가 하락 예고..."한국 둔화폭 적을 것"</p>
-                <img class="ss9" src="{% static 'logo,img/news/9.jpg' %}" width="182px" height="112px">
+                <img class="ss9" src="./logo,img/news/9.jpg" width="182px" height="112px">
             </div>
 
             <hr width="1250px">
 
             <div class="ten">
                 <p class="ten_10">박일준 산업부 차관 "올여름 전력수급 큰 문제 없어"</p>
-                <img class="ss10" src="{% static 'logo,img/news/10.jpg' %}" width="235px" height="112px">
+                <img class="ss10" src="./logo,img/news/10.jpg" width="235px" height="112px">
             </div>
         </div>
 
@@ -186,4 +185,5 @@
         </div>
     </div>
 </body>
+
 </html>
