@@ -293,6 +293,16 @@ header .header_tiny .tiny_menu>a:hover {
   margin-top: 50px;
 }
 
+.list1 .prod_list .prod_item:hover {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 30px;
+  border: 6px solid;
+  border-image: linear-gradient(to right, #00b09b, #96c93d);
+  border-image-slice: 1;
+}
+
 .prod_list .prod_item {
   display: block;
   width: 100%;
@@ -302,10 +312,12 @@ header .header_tiny .tiny_menu>a:hover {
   border: 1px solid #dddddd;
   border-radius: 16px;
 }
+
 .prod_list .prod_item .prod_img{
   margin-left: 5px;
   margin-top: 3px;
 }
+
 .prod_list .prod_item .prod_text .name {
   display: flex;
   justify-content: center;
@@ -344,7 +356,41 @@ header .header_tiny .tiny_menu>a:hover {
   box-sizing: border-box;
 }
 
+.prod_list .prod_item .prod_wrap>.plus1 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 30px 30px 0px 30px;
+  background: #ef6804;
+  margin-top: 10px;
+  margin-left: 13px;
+}
 
+.prod_list .prod_item .prod_wrap>.plus2 {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 30px 30px 0px 30px;
+  background: #247b47;
+  margin-top: 10px;
+  margin-left: 13px;
+}
 
 
 /*plus*/
