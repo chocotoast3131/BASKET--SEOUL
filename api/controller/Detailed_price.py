@@ -36,4 +36,4 @@ def Detailed_graph(itemcode, kindcode, value_name):
     df_dict = json.loads(df_json)
     return df_dict
 
-print(Detailed_graph('111', '01', '쌀'))
+# print(Detailed_graph('111', '01', '쌀'))
