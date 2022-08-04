@@ -1,7 +1,5 @@
 import requests
 import json
-import numpy as np
-import pandas as pd
 
 def open_api(**kwargs): #함수 정의할 때 사용.
     url = 'http://www.kamis.or.kr/service/price/xml.do'
