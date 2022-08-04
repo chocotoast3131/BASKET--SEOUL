@@ -1,6 +1,5 @@
 from api_module import f_class__, f_item__
 from datetime import date, timedelta
-from dateutil.relativedelta import relativedelta
 
 def price_code_name(name):
     
@@ -83,7 +82,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
 def Detailed_graph_code(value_name):
     
     day = date.today() - timedelta(1)
-    months = day - relativedelta(months=1) #한달치 데이터
+    months = "2022-01-01"
 
     match(value_name):
         case '쌀':
