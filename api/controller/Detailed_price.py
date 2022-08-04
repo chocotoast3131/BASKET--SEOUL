@@ -1,5 +1,5 @@
 #상세정보/품목별함수
-from api_module import f_item__, item_func
+from .api_module import f_item__, item_func
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta
 import pandas as pd

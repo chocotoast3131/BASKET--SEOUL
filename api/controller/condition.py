@@ -1,4 +1,4 @@
-from api_module import f_class__, values
+from .api_module import f_class__
 from datetime import date, timedelta
 
 def price_code_name(name):
