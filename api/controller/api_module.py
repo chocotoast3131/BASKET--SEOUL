@@ -35,24 +35,25 @@ def class_func(res_json): # 부류별
         res_class_f.append(res_class_)
     return res_class_f
 
-def class_func1(res_json): # 부류별
-    res_class_f1 = list() #새로운 dict 생성 dict() 대신 list로 캐스팅
+def class_func1(res_json): 
+    res_class_f1 = list()
     if type(res_json['data']) is list:
         if res_json['data'][0] == "001": 
             print('no data')
             return res_class_f1
         
-    for class_1 in res_json['data']['item']: #사용할 key만 가져옴
+    for class_1 in res_json['data']['item']:
         res_class_1 = { \
             "item_name": class_1["item_name"], \
             "kind_name": class_1["kind_name"], \
+            "day1": class_1["day1"], \
             "past_month": class_1["dpr5"], \
             "today": class_1["dpr1"] \
         }
         res_class_f1.append(res_class_1)
     return res_class_f1
 
-def item_func(res_json): # 품목별
+def item_func(res_json): 
     res_item_f = list()
     if type(res_json['data']) is list:
         if res_json['data'][0] == "001":

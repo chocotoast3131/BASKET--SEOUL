@@ -13,4 +13,4 @@ def price_1(name):
     df_dict = json.loads(df_json)
     return df_dict
 
-# print(price_1('수산물'))
+print(price_1('쌀/잡곡'))
