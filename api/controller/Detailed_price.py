@@ -1,42 +1,32 @@
 #상세정보/품목별함수
-from .api_module import f_item__, item_func
-from datetime import date, timedelta
-from dateutil.relativedelta import relativedelta
+from api_module import graph_func, class_func1
+from condition import Detailed_graph_code, Detailed_code_name
 import pandas as pd
 import json
 import plotly.express as px
 
-def Detailed(itemcode, kindcode, value_name): #상세정보
-
-    day = date.today() - timedelta(1)
-
-    df = pd.DataFrame(item_func(f_item__(itemcode, kindcode, day, day))) #식량작물, 채소류, 과일류, 수산물 중 필요한 값을 입력
-
-    index1 = df[df['itemname'] != value_name].index
+def Detailed(name, kindname): #품종별로도 볼수있어야함
+    df = pd.DataFrame(class_func1(Detailed_code_name(name, kindname)))
+    index1 = df[df['item_name'] != kindname].index
     df_drop = df.drop(index1)
+    # df_json = df_drop1.to_json(orient = 'records')
+    # df_dict = json.loads(df_json)
+    return df_drop
+# print(Detailed("수산물", "새우")) #확인용 #kindname에 있는데 출력되지 않는 데이터는 없는 데이터. 존재하는 데이터만 나옴
 
-    df_json = df_drop.to_json(orient = 'records') 
-    df_dict = json.loads(df_json)
-    return df_dict
-print(Detailed('111', '01', '쌀'))
 
-def Detailed_graph(itemcode, kindcode, value_name, values): #마켓명 하나만 출력할 수 있음/그래프용 데이터
+def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래프용 데이터
+    
+    df = pd.DataFrame(graph_func(Detailed_graph_code(value_name)))
 
-    day = date.today() - timedelta(1)
-    months = day - relativedelta(months=1) #한달치 데이터
-
-    df = pd.DataFrame(item_func(f_item__(itemcode, kindcode, months, day)))
-
-    index1 = df[df['itemname'] != value_name].index #이걸 제외한 값 전부 삭제(null값 지우려고 넣음). ex)쌀
+    index1 = df[df['itemname'] != value_name].index #제외한 값 전부 삭제(null값 지우려고 넣음). ex)['itemname'] : ['쌀'] -> value_name에 쌀 저장
     df_drop = df.drop(index1)
-
-    df_del_marketname = (df_drop['marketname'] == values) #values는 마켓명. 입력한 값만 출력됨
-
+    df_del_marketname = (df_drop['marketname'] == '경동') #values는 마켓명. 입력한 값만 출력됨 / 1차적으로 값을 거름
     del_marketname = df_drop[df_del_marketname]
+    del del_marketname['marketname'] #그래프를 위한 데이터는 품종명, 날짜, 가격만 필요하므로 마켓명 열을 삭제함
 
-    df_json = del_marketname.to_json(orient = 'records')
-    df_dict = json.loads(df_json)
-    return df_dict
+    # df_json = del_marketname.to_json(orient = 'records')
+    # df_dict = json.loads(df_json)
+    return del_marketname
 
-# print(Detailed_graph('111', '01', '쌀', '경동')) #그래프 데이터 입력방식
-# print(Detailed_graph('223', '01', '오이', 'A-유통'))
+print(Detailed_graph('당근'))
