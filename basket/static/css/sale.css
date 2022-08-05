@@ -235,14 +235,101 @@ header .header_tiny .tiny_menu>a:hover {
 }
 
 
+/* left_menu */
+.l_menu {
+  float: left;
+  background-color: #fff;
+  width: 150px;
+  height: 3110px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+}
 
+.left_logo .bgo {
+  margin-top: 20%;
+  margin-left: 55px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left_logo .second_hr {
+  margin-left: 53px;
+  margin-top: 15px;
+  width: 50px;
+  height: 4px;
+  background-color: #000;
+  border: 0;
+}
+
+.l_menu .left {
+  margin-top: 15px;
+  color: black;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left_m li>.fruit:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.vegetables:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.rice:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.fish:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* sub_menu */
+.left .left_m .sub_menu {
+  transition: all .3s;
+}
+
+.left .left_m .sub_menu>a {
+  display: block;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.left_m li:hover a {
+  font-weight: bold;
+}
+
+.left_m a:hover {
+  text-decoration: underline;
+}
+
+.left_m .sub_menu {
+  display: none;
+}
+
+.left_m li:hover .sub_menu {
+  display: block;
+}
 
 
 
 /*section part*/
 .allsection {
   width: 1380px;
-<<<<<<< HEAD
   margin-left: 350px;
   margin-top: 50px;
 }
@@ -256,27 +343,6 @@ header .header_tiny .tiny_menu>a:hover {
   position: absolute;
   margin-left: 30px;
   margin-top: 50px;
-=======
-  height: 1080px;
-  margin-left: 350px;
-  margin-top: 50px;
-  border: solid black;
-}
-
-.allsection .title {
-  margin-left: 600px;
-}
-
-<<<<<<< HEAD
-/*left*/
-=======
-
->>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
-.depth3Lnb {
-  position: absolute;
-  margin-left: 30px;
-  margin-top: 45px;
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   line-height: 50px;
 }
 
@@ -284,7 +350,6 @@ header .header_tiny .tiny_menu>a:hover {
   font-weight: 700;
 }
 
-<<<<<<< HEAD
 .depth3Lnb .eventInfo .eventInfo_02:hover {
   text-decoration: underline;
 }
@@ -302,19 +367,6 @@ header .header_tiny .tiny_menu>a:hover {
   display: grid;
   grid-template-columns: 290px 290px 290px 290px;
   grid-template-rows: 350px 350px 350px 350px;
-=======
-<<<<<<< HEAD
-/*상품*/
-.list1 {
-  width: 1100px;
-  height: 1000px;
-  border: solid black;
-  list-style: none;
-  margin-left: 220px;
-  overflow: hidden;
-  display: block;
-  list-style-type: disc;
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 }
 
 
@@ -326,7 +378,6 @@ header .header_tiny .tiny_menu>a:hover {
   max-height: 300px;
   background: #fff;
   border-radius: 30px;
-<<<<<<< HEAD
   margin-top: 50px;
 }
 
@@ -338,9 +389,6 @@ header .header_tiny .tiny_menu>a:hover {
   border: 6px solid;
   border-image: linear-gradient(to right, #00b09b, #96c93d);
   border-image-slice: 1;
-=======
-  margin-top: 55px;
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 }
 
 .prod_list .prod_item {
@@ -350,7 +398,6 @@ header .header_tiny .tiny_menu>a:hover {
   background: #fff;
   box-sizing: border-box;
   border: 1px solid #dddddd;
-<<<<<<< HEAD
   border-radius: 16px;
 }
 
@@ -359,12 +406,6 @@ header .header_tiny .tiny_menu>a:hover {
   margin-top: 3px;
 }
 
-=======
-  overflow: hidden;
-  border-radius: 16px;
-}
-
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 .prod_list .prod_item .prod_text .name {
   display: flex;
   justify-content: center;
@@ -381,10 +422,7 @@ header .header_tiny .tiny_menu>a:hover {
 }
 
 .prod_list .prod_item .prod_text .price {
-<<<<<<< HEAD
   font-size: 15px;
-=======
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,7 +442,6 @@ header .header_tiny .tiny_menu>a:hover {
   font-weight: normal;
   padding-left: 2px;
   box-sizing: border-box;
-<<<<<<< HEAD
 }
 
 .prod_list .prod_item .prod_wrap>.plus1 {
@@ -441,28 +478,11 @@ header .header_tiny .tiny_menu>a:hover {
   background: #247b47;
   margin-top: 10px;
   margin-left: 13px;
-=======
-=======
-.prod_wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 220px;
-  height: 340px;
-  padding: 10px 8px 0;
-  box-sizing: border-box;
-  border: solid black;
->>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 }
 
 
 
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 /*plus*/
 
 .control {
@@ -471,11 +491,7 @@ header .header_tiny .tiny_menu>a:hover {
   padding: 10px;
   font-size: 30px;
   text-align: center;
-<<<<<<< HEAD
   margin-left: 1620px;
-=======
-  margin-left: 1680px;
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   margin-top: 20px;
   color: #000;
 }
@@ -488,7 +504,6 @@ header .header_tiny .tiny_menu>a:hover {
 
 @keyframes controller {
   0% {
-<<<<<<< HEAD
     transform: rotate(45deg);
   }
 
@@ -505,29 +520,6 @@ header .header_tiny .tiny_menu>a:hover {
     transform: skew(0deg);
   }
 }
-=======
-      transform: rotate(45deg);
-  }
-
-  25% {
-      transform: rotate(-45deg);
-  }
-
-  50% {
-      transform: rotate(45deg);
-  }
-
-  100% {
-      transform: scale(0);
-      transform: skew(0deg);
-  }
-}
-=======
-
-
-
->>>>>>> 6205b839bd37e8a707ea320540cecca7e76aef35
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 
 
 

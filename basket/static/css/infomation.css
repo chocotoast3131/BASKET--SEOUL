@@ -240,6 +240,96 @@ header .header_tiny .tiny_menu > a:hover {
   text-decoration: underline;
 }
 
+/* left_menu */
+.l_menu {
+  float: left;
+  background-color: #fff;
+  width: 150px;
+  height: 3110px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+}
+
+.left_logo .bgo {
+  margin-top: 20%;
+  margin-left: 55px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left_logo .second_hr {
+  margin-left: 53px;
+  margin-top: 15px;
+  width: 50px;
+  height: 4px;
+  background-color: #000;
+  border: 0;
+}
+
+.l_menu .left {
+  margin-top: 15px;
+  color: black;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left_m li>.fruit:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.vegetables:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.rice:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.fish:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* sub_menu */
+.left .left_m .sub_menu {
+  transition: all .3s;
+}
+
+.left .left_m .sub_menu>a {
+  display: block;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.left_m li:hover a {
+  font-weight: bold;
+}
+
+.left_m a:hover {
+  text-decoration: underline;
+}
+
+.left_m .sub_menu {
+  display: none;
+}
+
+.left_m li:hover .sub_menu {
+  display: block;
+}
+
 /*section*/
 
 .title {
@@ -252,12 +342,8 @@ header .header_tiny .tiny_menu > a:hover {
   height: 800px;
   text-align: center;
   margin-top: 50px;
-<<<<<<< HEAD
   margin-left: 350px;
   padding-left: 50px;
-=======
-  margin-left: 380px;
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 }
 
 input[type="radio"] {
@@ -276,27 +362,14 @@ input[type="radio"] + label {
 
 .conbox {
   width: 1280px;
-<<<<<<< HEAD
   height: 1000px;
   margin-top: 50px;
-=======
-  height: 400px;
-  /* display: none; */
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   overflow-y: scroll;
   text-align: center;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-<<<<<<< HEAD
 }
 
-.conbox::-webkit-scrollbar {
-  display: none;
-}
-
-input[id="tab01"]:checked ~ .con1 {
-=======
-}
 .conbox::-webkit-scrollbar {
   display: none;
 }
@@ -309,25 +382,12 @@ input[id="tab01"]:checked ~ .con1 {
 }
 
 input[id="tab02"]:checked ~ .con2 {
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
   display: block;
   margin-left: 50px;
   margin-top: 50px;
   width: 1280px;
 }
 
-<<<<<<< HEAD
-input[id="tab02"]:checked ~ .con2 {
-=======
-input[id="tab03"]:checked ~ .con3 {
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
-  display: block;
-  margin-left: 50px;
-  margin-top: 50px;
-  width: 1280px;
-}
-
-<<<<<<< HEAD
 input[id="tab03"]:checked ~ .con3 {
   display: block;
   margin-left: 50px;
@@ -335,8 +395,6 @@ input[id="tab03"]:checked ~ .con3 {
   width: 1280px;
 }
 
-=======
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 input[id="tab04"]:checked ~ .con4 {
   display: block;
   margin-left: 50px;
@@ -492,22 +550,19 @@ input[id="tab04"]:checked + label img {
   color: white;
 }
 
-<<<<<<< HEAD
 
 
 
 
-=======
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
 /* footer */
 
 .footer {
   width: 85%;
   height: 160px;
-<<<<<<< HEAD
   bottom: 0;
-=======
->>>>>>> 1f8d6f6b63e14397d5406eb776f8cb8b78048486
+  margin-top: 150px;
+  margin-bottom: 0;
+  transform : translateY(100%);
   background: #f7f1e7;
   margin-top: 100px;
   float: right;
