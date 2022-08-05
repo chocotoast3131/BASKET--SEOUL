@@ -12,7 +12,7 @@ def Detailed(name, kindname): #품종별로도 볼수있어야함
     df_json = df_drop.to_json(orient = 'records')
     df_dict = json.loads(df_json)
     return df_dict
-# print(Detailed("과일", "사과")) #확인용 #kindname에 있는데 출력되지 않는 데이터는 없는 데이터. 존재하는 데이터만 나옴
+# print(Detailed("쌀_잡곡", "고구마")) #확인용 #kindname에 있는데 출력되지 않는 데이터는 없는 데이터. 존재하는 데이터만 나옴
 
 
 def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래프용 데이터
@@ -29,4 +29,4 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     df_dict = json.loads(df_json)
     return df_dict
 
-print(Detailed_graph('쌀')) #수산물 키워드는 전부 에러발생
+# print(Detailed_graph('쌀')) #수산물 키워드는 전부 에러발생

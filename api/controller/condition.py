@@ -11,7 +11,7 @@ def price_code_name(name):
         day -= timedelta(2)
     
     match(name):
-        case "쌀/잡곡":
+        case "쌀_잡곡":
             code_print = f_class__('100', day)
         case "채소":
             code_print = f_class__('200', day)
@@ -31,15 +31,15 @@ def Detailed_code_name(name, kindname): #Detailed_price
         day -= timedelta(2)
     
     match(name, kindname):
-        case "쌀/잡곡", "쌀":
+        case "쌀_잡곡", "쌀":
             Detailed_print = f_class__('100', day)
-        case "쌀/잡곡", "찹쌀":
+        case "쌀_잡곡", "찹쌀":
             Detailed_print = f_class__('100', day)
-        case "쌀/잡곡", "콩":
+        case "쌀_잡곡", "콩":
             Detailed_print = f_class__('100', day)
-        case "쌀/잡곡", "고구마":
+        case "쌀_잡곡", "고구마":
             Detailed_print = f_class__('100', day)
-        case "쌀/잡곡", "감자":
+        case "쌀_잡곡", "감자":
             Detailed_print = f_class__('100', day)
 
         case "채소", "배추":
@@ -77,7 +77,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
         case "수산물", "새우":
             Detailed_print = f_class__('600', day)
 
-    return Detailed_print #쌀/잡곡, 채소, 과일, 수산물
+    return Detailed_print #쌀_잡곡, 채소, 과일, 수산물
 
 def Detailed_graph_code(value_name):
     
