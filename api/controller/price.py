@@ -1,6 +1,6 @@
 #물가정보/부류별함수
-from api_module import class_func
-from condition import price_code_name
+from .api_module import class_func
+from .condition import price_code_name
 import pandas as pd
 import json
 
@@ -13,4 +13,4 @@ def price_1(name):
     df_dict = json.loads(df_json)
     return df_dict
 
-print(price_1('쌀/잡곡'))
+# print(price_1('쌀/잡곡'))
