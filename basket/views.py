@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.template import loader
-from django.http import HttpResponse
+from django.db.models import Q
+
+from api.models import ItemName
 
 # Create your views here.
 
@@ -22,5 +23,80 @@ def QnA(request):
 def sitemap(request):
     return render(request, 'basket/sitemap.html')
 
+# 검색
 def search(request):
     return render(request, 'basket/search.html')
+
+
+def searched(request): # 검색결과
+    name = request.GET.get("name") # 쿼리스트링 받기
+    results = ItemName.objects.filter(Q(category_name__icontains = name)|Q(item_name__icontains = name)|Q(kind_name__icontains = name)) # Q 조건문, name이 ~이거나 ~인것
+    return render(request, 'basket/searched.html', {"results":results})
+
+# 상세정보
+# 과일
+def fruit_apple(request): # 사과
+    return render(request, 'basket/fruit-apple.html')
+
+def fruit_pear(request): # 배
+    return render(request, 'basket/fruit-pear.html')
+
+def fruit_orange(request): # 오렌지
+    return render(request, 'basket/fruit-orange.html')
+
+def fruit_pineapple(request): # 파인애플
+    return render(request, 'basket/fruit-pineapple.html')
+
+# 채소
+def vegetable_cabbage(request): # 배추
+    return render(request, 'basket/vegetable-cabbage.html')
+
+def vegetable_cucumber(request): # 오이
+    return render(request, 'basket/vegetable-cucumber.html')
+
+def vegetable_radish(request): # 무
+    return render(request, 'basket/vegetable-redish.html')
+
+def vegetable_carrot(request): # 당근
+    return render(request, 'basket/vegetable-carrot.html')
+
+def vegetable_onion(request): # 양파
+    return render(request, 'basket/vegetable-onion.html')
+
+def vegetable_greenonion(request): # 파
+    return render(request, 'basket/vegetable-greenonion.html')
+
+def vegetable_garlic(request): # 마늘
+    return render(request, 'basket/vegetable-garlic.html')
+
+# 쌀/잡곡
+def rice_rice(request): # 쌀
+    return render(request, 'basket/rice-rice.html')
+
+def rice_sticky(request): # 찹쌀
+    return render(request, 'basket/rice-sticky.html')
+
+def rice_been(request): # 콩
+    return render(request, 'basket/rice-been.html')
+
+def rice_sweetpotato(request): # 고구마
+    return render(request, 'basket/rice-sweetpotato.html')
+
+def rice_potato(request): # 감자
+    return render(request, 'basket/rice-potato.html')
+
+# 수산물
+def fish_mackerel(request): # 고등어
+    return render(request, 'basket/fish-mackerel.html')
+
+def fish_cutlassfish(request): # 갈치
+    return render(request, 'basket/fish-cutlassfish.html')
+
+def fish_saury(request): # 꽁치
+    return render(request, 'basket/fish-saury.html')
+
+def fish_pollack(request): # 명태
+    return render(request, 'basket/fish-pollack.html')
+
+def fish_shrimp(request): # 새우
+    return render(request, 'basket/fish-shrimp.html')
