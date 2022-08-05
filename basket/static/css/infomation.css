@@ -560,9 +560,12 @@ input[id="tab04"]:checked + label img {
   width: 85%;
   height: 160px;
   bottom: 0;
+<<<<<<< HEAD
   margin-top: 150px;
   margin-bottom: 0;
   transform : translateY(100%);
+=======
+>>>>>>> 1ca85057b3cc26c1c8fd33e3ab032f59915bd511
   background: #f7f1e7;
   margin-top: 100px;
   float: right;
