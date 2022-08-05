@@ -2,12 +2,43 @@ from . import views
 from django.urls import path
 
 urlpatterns = [
+    # main,sub 페이지
     path('', views.index, name='index'),
     path('information/', views.information, name='information'),
     path('news/', views.news, name='news'),
     path('sale/', views.sale, name='sale'),
     path('QnA/', views.QnA, name='QnA'),
     path('sitemap/', views.sitemap, name='sitemap'),
-    path('sitemap/', views.search, name='search'),
 
+    # 검색
+    path('search/', views.search, name='search'), # 검색페이지
+    path('searched/', views.searched, name="searched"), # 검색결과
+
+    # 상세정보
+    # 과일
+    path('information/과일/사과/', views.fruit_apple, name='fruit-apple'),
+    path('information/과일/배/', views.fruit_pear, name='fruit-pear'),
+    path('information/과일/오렌지/', views.fruit_orange, name='fruit-orange'),
+    path('information/과일/파인애플/', views.fruit_pineapple, name='fruit-pineapple'),
+    # 채소
+    path('information/채소/배추/', views.vegetable_cabbage, name='vegetable-cabbage'),
+    path('information/채소/오이/', views.vegetable_cucumber, name='vegetable-cucumber'),
+    path('information/채소/무/', views.vegetable_radish, name='vegetable-radish'),
+    path('information/채소/당근/', views.vegetable_carrot, name='vegetable-carrot'),
+    path('information/채소/양파/', views.vegetable_onion, name='vegetable-onion'),
+    path('information/채소/파/', views.vegetable_greenonion, name='vegetable-greenonion'),
+    path('information/채소/깐마늘(국산)/', views.vegetable_garlic, name='vegetable-garlic'),
+    # 쌀/잡곡
+    path('information/쌀_잡곡/쌀/', views.rice_rice, name='rice-rice'),
+    path('information/쌀_잡곡/찹쌀/', views.rice_sticky, name='rice-sticky'),
+    path('information/쌀_잡곡/콩/', views.rice_been, name='rice-been'),
+    path('information/쌀_잡곡/고구마/', views.rice_sweetpotato, name='rice-sweetpotato'),
+    path('information/쌀_잡곡/감자/', views.rice_potato, name='rice-potato'),
+    # 수산물
+    path('information/수산물/고등어/', views.fish_mackerel, name='fish-mackerel'),
+    path('information/수산물/갈치/', views.fish_cutlassfish, name='fish-cutlassfish'),
+    path('information/수산물/꽁치/', views.fish_saury, name='fish-saury'),
+    path('information/수산물/명태/', views.fish_pollack, name='fish-pollack'),
+    path('information/수산물/새우/', views.fish_shrimp, name='fish-shrimp'),
+    
 ]
