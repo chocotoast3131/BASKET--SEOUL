@@ -226,7 +226,107 @@ header .header_tiny .tiny_menu>a:hover {
     transform: scaleX(1);
 }
 
+/*nav_bottom*/
+.nav_bottom {
+    width: 200px;
+    margin-left: 360px;
+    margin-top: 10px;
+    font-size: 13px;
+}
 
+.nav_bottom .allmenu:hover {
+    text-decoration: underline;
+}
+
+/* left_menu */
+.l_menu {
+    float: left;
+    background-color: #fff;
+    width: 150px;
+    height: 3110px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 30;
+    box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+  }
+  
+  .left_logo .bgo {
+    margin-top: 20%;
+    margin-left: 55px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .left_logo .second_hr {
+    margin-left: 53px;
+    margin-top: 15px;
+    width: 50px;
+    height: 4px;
+    background-color: #000;
+    border: 0;
+  }
+  
+  .l_menu .left {
+    margin-top: 15px;
+    color: black;
+    line-height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .left_m li>.fruit:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .left_m li>.vegetables:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .left_m li>.rice:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .left_m li>.fish:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* sub_menu */
+  .left .left_m .sub_menu {
+    transition: all .3s;
+  }
+  
+  .left .left_m .sub_menu>a {
+    display: block;
+    font-size: 15px;
+    font-weight: lighter;
+    line-height: 35px;
+  }
+  
+  .left_m li:hover a {
+    font-weight: bold;
+  }
+  
+  .left_m a:hover {
+    text-decoration: underline;
+  }
+  
+  .left_m .sub_menu {
+    display: none;
+  }
+  
+  .left_m li:hover .sub_menu {
+    display: block;
+  }
 
 /*search*/
 
@@ -235,11 +335,11 @@ header .header_tiny .tiny_menu>a:hover {
     margin-top: 50px;
     margin-left: 550px;
     margin-bottom: 150px;
-    border: 1px solid black;
 }
 
 .what {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    margin-left: 125px;
     background-color: transparent;
 }
 
@@ -250,15 +350,14 @@ header .header_tiny .tiny_menu>a:hover {
     text-align: center;
 }
 
-.header h1 {
+.header {
     text-transform: uppercase;
-    color: white;
-    margin: 0;
+    margin-left: 60px;
     margin-bottom: 8px;
 }
 
 #value {
-    width: 60%;
+    width: 80%;
     border: none;
     border-bottom: 2px solid black;
     background: none;
@@ -308,6 +407,10 @@ header .header_tiny .tiny_menu>a:hover {
     height: 160px;
     background: #f7f1e7;
     float: right;
+    bottom: 0;
+    margin-top: 150px;
+    margin-bottom: 0;
+    transform : translateY(100%);
     padding: 20px 0px 0px 0px;
     border-radius: 55px 0px 0px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;

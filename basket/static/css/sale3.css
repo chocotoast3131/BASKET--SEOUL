@@ -234,7 +234,95 @@ header .header_tiny .tiny_menu>a:hover {
   text-decoration: underline;
 }
 
+/* left_menu */
+.l_menu {
+  float: left;
+  background-color: #fff;
+  width: 150px;
+  height: 3110px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 30;
+  box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
+}
 
+.left_logo .bgo {
+  margin-top: 20%;
+  margin-left: 55px;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.left_logo .second_hr {
+  margin-left: 53px;
+  margin-top: 15px;
+  width: 50px;
+  height: 4px;
+  background-color: #000;
+  border: 0;
+}
+
+.l_menu .left {
+  margin-top: 15px;
+  color: black;
+  line-height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.left_m li>.fruit:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.vegetables:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.rice:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.left_m li>.fish:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* sub_menu */
+.left .left_m .sub_menu {
+  transition: all .3s;
+}
+
+.left .left_m .sub_menu>a {
+  display: block;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 35px;
+}
+
+.left_m li:hover a {
+  font-weight: bold;
+}
+
+.left_m a:hover {
+  text-decoration: underline;
+}
+
+.left_m .sub_menu {
+  display: none;
+}
+
+.left_m li:hover .sub_menu {
+  display: block;
+}
 
 
 
