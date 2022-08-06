@@ -6,9 +6,14 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('information/', views.information, name='information'),
     path('news/', views.news, name='news'),
-    path('sale/', views.sale, name='sale'),
     path('QnA/', views.QnA, name='QnA'),
     path('sitemap/', views.sitemap, name='sitemap'),
+
+    # 편의점 할인정보
+    path('sale/GS25/', views.GS25, name='sale'), # sale.html == GS25
+    path('sale/7-Eleven/', views.SevenEleven, name='7-Eleven'),
+    path('sale/CU/', views.CU, name="CU"),
+
 
     # 검색
     path('search/', views.search, name='search'), # 검색페이지

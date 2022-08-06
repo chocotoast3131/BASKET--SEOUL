@@ -26,7 +26,7 @@
     <header>
         <div class="header_tiny">
             <div class="tiny_menu">
-                <a href="{% url 'index' %}">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
+                <a href="{% url 'index' %}">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
             </div>
         </div>
 
@@ -134,8 +134,8 @@
         <div class="depth3Lnb">
             <ul class="eventInfo">
                 <li class="eventInfo_01"><a href="{% url 'sale' %}">GS25</a></li>
-                <li class="eventInfo_02"><a href="7-Eleven.html">7-ELEVEN</a></li>
-                <li class="eventInfo_03"><a href="CU.html">CU</a></li>
+                <li class="eventInfo_02"><a href="{% url '7-Eleven' %}">7-ELEVEN</a></li>
+                <li class="eventInfo_03"><a href="{% url 'CU' %}">CU</a></li>
             </ul>
         </div>
 
