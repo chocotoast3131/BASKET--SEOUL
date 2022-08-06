@@ -42,11 +42,11 @@ def Detailed_code_name(name, kindname): #Detailed_price
         case "쌀_잡곡", "감자":
             Detailed_print = f_class__('100', day)
 
-        case "채소", "배추":
+        case "채소", "상추":
             Detailed_print = f_class__('200', day)
         case "채소", "오이":
             Detailed_print = f_class__('200', day)
-        case "채소", "무":
+        case "채소", "시금치":
             Detailed_print = f_class__('200', day)
         case "채소", "당근":
             Detailed_print = f_class__('200', day)
