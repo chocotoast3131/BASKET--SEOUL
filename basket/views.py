@@ -50,11 +50,11 @@ def fruit_apple(request): # 사과
 def fruit_pear(request): # 배
     return render(request, 'basket/fruit-pear.html')
 
-def fruit_orange(request): # 오렌지
-    return render(request, 'basket/fruit-orange.html')
+def fruit_peach(request): # 복숭아
+    return render(request, 'basket/fruit-peach.html')
 
-def fruit_pineapple(request): # 파인애플
-    return render(request, 'basket/fruit-pineapple.html')
+def fruit_grapes(request): # 포도
+    return render(request, 'basket/fruit-grapes.html')
 
 # 채소
 def vegetable_cabbage(request): # 배추
@@ -104,8 +104,8 @@ def fish_hairtail(request): # 갈치
 def fish_croaker(request): # 꽁치
     return render(request, 'basket/fish-croaker.html')
 
-def fish_pollack(request): # 명태
-    return render(request, 'basket/fish-pollack.html')
+def fish_squid(request): # 명태
+    return render(request, 'basket/fish-squid.html')
 
 def fish_shrimp(request): # 새우
     return render(request, 'basket/fish-shrimp.html')
