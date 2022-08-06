@@ -23,8 +23,8 @@ urlpatterns = [
     # 과일
     path('information/과일/사과/', views.fruit_apple, name='fruit-apple'),
     path('information/과일/배/', views.fruit_pear, name='fruit-pear'),
-    path('information/과일/오렌지/', views.fruit_orange, name='fruit-orange'),
-    path('information/과일/파인애플/', views.fruit_pineapple, name='fruit-pineapple'),
+    path('information/과일/복숭아/', views.fruit_peach, name='fruit-peach'),
+    path('information/과일/포도/', views.fruit_grapes, name='fruit-grapes'),
     # 채소
     path('information/채소/배추/', views.vegetable_cabbage, name='vegetable-cabbage'),
     path('information/채소/오이/', views.vegetable_cucumber, name='vegetable-cucumber'),
@@ -43,7 +43,7 @@ urlpatterns = [
     path('information/수산물/고등어/', views.fish_mackerel, name='fish-mackerel'),
     path('information/수산물/갈치/', views.fish_hairtail, name='fish-hairtail'),
     path('information/수산물/꽁치/', views.fish_croaker, name='fish-croaker'),
-    path('information/수산물/명태/', views.fish_pollack, name='fish-pollack'),
+    path('information/수산물/명태/', views.fish_squid, name='fish-squid'),
     path('information/수산물/새우/', views.fish_shrimp, name='fish-shrimp'),
     
 ]
