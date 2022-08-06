@@ -14,14 +14,23 @@ def information(request):
 def news(request):
     return render(request, 'basket/newspage.html')
 
-def sale(request):
-    return render(request, 'basket/sale.html')
 
 def QnA(request):
     return render(request, 'basket/Q&A.html')
 
 def sitemap(request):
     return render(request, 'basket/sitemap.html')
+
+# 편의점 할인정보 
+def GS25(request): 
+    return render(request, 'basket/sale.html')
+
+def SevenEleven(request):
+    return render(request, 'basket/7-Eleven.html')
+
+def CU(request):
+    return render(request, 'basket/CU.html')
+
 
 # 검색
 def search(request):

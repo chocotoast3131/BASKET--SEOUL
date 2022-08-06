@@ -1,8 +1,9 @@
 from . import views
-from django.urls import path
+from django.urls import path,re_path
 from . import apis
 
 urlpatterns = [
    path('get/', apis.get_price_code), # 부류별 json 데이터로 출력
-   # path('detail/', apis.get_detail_code), # 품목별 json 데이터로 출력
+   re_path(r'^test/(?P<name>[가-힣][_가-힣]{1,4})/(?P<kindname>[(가-힣)]{1,7})/$',apis.get_detail_code), # 품목별 상세정보 json 데이터
+   re_path(r'^test/(?P<value_name>[(가-힣)]{1,7})/$',apis.get_detail_graph), # 품목별 그래프 json 데이터   
 ]
