@@ -17,7 +17,6 @@ urlpatterns = [
 
     # 검색
     path('search/', views.search, name='search'), # 검색페이지
-    # path('searched/', views.searched, name="searched"), # 검색결과
     re_path(r'^search/\?[a-z]{4}\=[/가-힣]{1,7}/$', views.searched, name="searched"),
 
     # 상세정보
