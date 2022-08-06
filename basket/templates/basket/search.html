@@ -131,6 +131,7 @@
         <div class="search">
             <h1 class="search_name"><i class="fa-regular fa-file-magnifying-glass"></i> 검색어 "@@"에 대한 통합검색 결과는 "%"건입니다.</h1>
             <br>
+    {% if results %}
             <table class="search1">
                 <thead>
                     <tr>
@@ -141,7 +142,7 @@
                 </thead>
     
                 <tbody>
-            {% if results %}
+
                 {% for result in results %}
                     <tr>
                         <td>{{ result.category_name }}</td>
@@ -149,12 +150,12 @@
                         <td>{{ result.kind_name }}</td>
                     </tr>
                 {% endfor %}
-            {% endif %}
-    
-                </tbody>
-    
-            </table>
-    
+                
+            </tbody>
+            
+        </table>
+        
+    {% endif %}
         </div>
 
 
