@@ -1,4 +1,4 @@
-from .api_module import f_class__, f_item__
+from api_module import f_class__, f_item__
 from datetime import date, timedelta
 
 def price_code_name(name):
@@ -61,7 +61,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
             Detailed_print = f_class__('400', day)
         case "과일", "배":
             Detailed_print = f_class__('400', day)
-        case "과일", "오렌지":
+        case "과일", "레몬":
             Detailed_print = f_class__('400', day)
         case "과일", "파인애플":
             Detailed_print = f_class__('400', day)
@@ -72,7 +72,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
             Detailed_print = f_class__('600', day)
         case "수산물", "꽁치":
             Detailed_print = f_class__('600', day)
-        case "수산물", "명태":
+        case "수산물", "물오징어":
             Detailed_print = f_class__('600', day)
         case "수산물", "새우":
             Detailed_print = f_class__('600', day)
@@ -96,12 +96,12 @@ def Detailed_graph_code(value_name):
         case '감자':
             graph_print = f_item__('152', '01', months, day)
 
-        case '배추':
-            graph_print = f_item__('211', '02', months, day)
+        case '상추':
+            graph_print = f_item__('214', '01', months, day)
         case '오이':
             graph_print = f_item__('223', '02', months, day)
-        case '무':
-            graph_print = f_item__('231', '01', months, day)
+        case '시금치':
+            graph_print = f_item__('213', '00', months, day)
         case '당근':
             graph_print = f_item__('232', '01', months, day)
         case '양파':
@@ -115,8 +115,8 @@ def Detailed_graph_code(value_name):
             graph_print = f_item__('411', '05', months, day)
         case '배':
             graph_print = f_item__('412', '01', months, day)
-        case '오렌지':
-            graph_print = f_item__('421', '03', months, day)
+        case '레몬':
+            graph_print = f_item__('424', '00', months, day)
         case '파인애플':
             graph_print = f_item__('420', '02', months, day)
 
@@ -126,7 +126,7 @@ def Detailed_graph_code(value_name):
             graph_print = f_item__('613', '01', months, day)
         case '꽁치':
             graph_print = f_item__('612', '01', months, day)
-        case '명태':
+        case '물오징어':
             graph_print = f_item__('615', '01', months, day)
         case '새우':
             graph_print = f_item__('654', '01', months, day)

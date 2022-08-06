@@ -1,6 +1,6 @@
 #물가정보/부류별함수
-from .api_module import class_func
-from .condition import price_code_name
+from api_module import class_func
+from condition import price_code_name
 import pandas as pd
 import json
 
