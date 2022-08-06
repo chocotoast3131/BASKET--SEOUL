@@ -31,7 +31,7 @@ urlpatterns = [
     # 쌀/잡곡
     path('information/쌀_잡곡/쌀/', views.rice_white, name='rice-white'),
     path('information/쌀_잡곡/찹쌀/', views.rice_sticky, name='rice-sticky'),
-    path('information/쌀_잡곡/콩/', views.rice_been, name='rice-been'),
+    path('information/쌀_잡곡/콩/', views.rice_bean, name='rice-bean'),
     path('information/쌀_잡곡/고구마/', views.rice_sweetpotato, name='rice-sweetpotato'),
     path('information/쌀_잡곡/감자/', views.rice_potato, name='rice-potato'),
     # 수산물

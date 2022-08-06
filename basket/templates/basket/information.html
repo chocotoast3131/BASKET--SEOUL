@@ -25,28 +25,28 @@
   <header>
     <div class="header_tiny">
       <div class="tiny_menu">
-        <a href="index.html">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
+        <a href="{% url 'index' %}">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
       </div>
     </div>
 
     <div class="first">
       <div class="logo">
-        <a href="index.html">
+        <a href="{% url 'index' %}">
           <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
         </a>
       </div>
 
       <div class="lnb">
         <ul class="main_menu">
-          <li><a href="information.html" class="btn1">물가정보</a></li>
+          <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
 
-          <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
+          <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
 
-          <li><a href="sale.html" class="btn3">할인정보</a></li>
+          <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
 
-          <li><a href="Q&A.html" class="btn4">고객센터</a></li>
+          <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
 
-          <li><a href="search.html" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+          <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
 
         </ul>
       </div>
@@ -77,8 +77,8 @@
             <ul class="left_m">
                 <li><a href="#none" class="fruit">과 일</a>
                     <div class="sub_menu">
-                        <a href="fruit-apple.html">사과</a>
-                        <a href="fruit-pear.html">배</a>
+                        <a href="{% url 'fruit-apple' %}">사과</a>
+                        <a href="{% url 'fruit-pear' %}">배</a>
                         <a href="fruit-peach.html">복숭아</a>
                         <a href="fruit-grapes.html">포도</a>
                     </div>
@@ -86,33 +86,33 @@
 
                 <li><a href="#none" class="vegetables">채 소</a>
                     <div class="sub_menu">
-                        <a href="vegetable-carrot.html">당근</a>
-                        <a href="vegetable-greenonion.html">대파</a>
-                        <a href="vegetable-garlic.html">마늘</a>
-                        <a href="vegetable-daikon.html">무</a>
-                        <a href="vegetable-cabbage.html">배추</a>
-                        <a href="vegetable-onion.html">양파</a>
-                        <a href="vegetable-cucumber.html">오이</a>
+                        <a href="{% url 'vegetable-carrot' %}">당근</a>
+                        <a href="{% url 'vegetable-greenonion' %}">대파</a>
+                        <a href="{% url 'vegetable-garlic' %}">마늘</a>
+                        <a href="{% url 'vegetable-daikon' %}">무</a>
+                        <a href="{% url 'vegetable-cabbage' %}">배추</a>
+                        <a href="{% url 'vegetable-onion' %}">양파</a>
+                        <a href="{% url 'vegetable-cucumber' %}">오이</a>
                     </div>
                 </li>
 
                 <li><a href="#none" class="rice">쌀 / 잡곡</a>
                     <div class="sub_menu">
-                        <a href="rice-white.html">일반미</a>
-                        <a href="rice-sticky.html">찹쌀</a>
-                        <a href="rice-bean.html">콩</a>
-                        <a href="rice-sweetpotato.html">고구마</a>
-                        <a href="rice-potato.html">감자</a>
+                        <a href="{% url 'rice-white' %}">일반미</a>
+                        <a href="{% url 'rice-sticky' %}">찹쌀</a>
+                        <a href="{% url 'rice-bean' %}">콩</a>
+                        <a href="{% url 'rice-sweetpotato' %}">고구마</a>
+                        <a href="{% url 'rice-potato' %}">감자</a>
                     </div>
                 </li>
 
                 <li><a href="#none" class="fish">수 산 물</a>
                     <div class="sub_menu">
-                        <a href="fish-mackerel.html">고등어</a>
-                        <a href="fish-hairtail.html">갈치</a>
-                        <a href="fish-croaker.html">꽁치</a>
+                        <a href="{% url 'fish-mackerel' %}">고등어</a>
+                        <a href="{% url 'fish-hairtail' %}">갈치</a>
+                        <a href="{% url 'fish-croaker' %}">꽁치</a>
                         <a href="fish-squid.html">물오징어</a>
-                        <a href="fish-shrimp.html">새우</a>
+                        <a href="{% url 'fish-shrimp' %}">새우</a>
                     </div>
                 </li>
             </ul>

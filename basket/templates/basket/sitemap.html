@@ -25,28 +25,28 @@
     <header>
         <div class="header_tiny">
             <div class="tiny_menu">
-                <a href="index.html">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
+                <a href="{% url 'index' %}">HOME</a><a href="#"></a>|<a href="sitemap.html">전체메뉴</a>
             </div>
         </div>
 
         <div class="first">
             <div class="logo">
-                <a href="index.html">
+                <a href="{% url 'index' %}">
                     <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
                 </a>
             </div>
 
             <div class="lnb">
                 <ul class="main_menu">
-                    <li><a href="information.html" class="btn1">물가정보</a></li>
+                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
 
-                    <li><a href="newspage.html" class="btn2">뉴스기사</a></li>
+                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
 
-                    <li><a href="sale.html" class="btn3">할인정보</a></li>
+                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
 
-                    <li><a href="Q&A.html" class="btn4">고객센터</a></li>
+                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
 
-                    <li><a href="search.html" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
+                    <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
 
                 </ul>
             </div>
@@ -75,8 +75,8 @@
             <ul class="left_m">
                 <li><a href="#none" class="fruit">과 일</a>
                     <div class="sub_menu">
-                        <a href="fruit-apple.html">사과</a>
-                        <a href="fruit-pear.html">배</a>
+                        <a href="{% url 'fruit-apple' %}">사과</a>
+                        <a href="{% url 'fruit-pear' %}">배</a>
                         <a href="fruit-peach.html">복숭아</a>
                         <a href="fruit-grapes.html">포도</a>
                     </div>
@@ -84,33 +84,33 @@
 
                 <li><a href="#none" class="vegetables">채 소</a>
                     <div class="sub_menu">
-                        <a href="vegetable-carrot.html">당근</a>
-                        <a href="vegetable-greenonion.html">대파</a>
-                        <a href="vegetable-garlic.html">마늘</a>
-                        <a href="vegetable-daikon.html">무</a>
-                        <a href="vegetable-cabbage.html">배추</a>
-                        <a href="vegetable-onion.html">양파</a>
-                        <a href="vegetable-cucumber.html">오이</a>
+                        <a href="{% url 'vegetable-carrot' %}">당근</a>
+                        <a href="{% url 'vegetable-greenonion' %}">대파</a>
+                        <a href="{% url 'vegetable-garlic' %}">마늘</a>
+                        <a href="{% url 'vegetable-daikon' %}">무</a>
+                        <a href="{% url 'vegetable-cabbage' %}">배추</a>
+                        <a href="{% url 'vegetable-onion' %}">양파</a>
+                        <a href="{% url 'vegetable-cucumber' %}">오이</a>
                     </div>
                 </li>
 
                 <li><a href="#none" class="rice">쌀 / 잡곡</a>
                     <div class="sub_menu">
-                        <a href="rice-white.html">일반미</a>
-                        <a href="rice-sticky.html">찹쌀</a>
-                        <a href="rice-bean.html">콩</a>
-                        <a href="rice-sweetpotato.html">고구마</a>
-                        <a href="rice-potato.html">감자</a>
+                        <a href="{% url 'rice-white' %}">일반미</a>
+                        <a href="{% url 'rice-sticky' %}">찹쌀</a>
+                        <a href="{% url 'rice-bean' %}">콩</a>
+                        <a href="{% url 'rice-sweetpotato' %}">고구마</a>
+                        <a href="{% url 'rice-potato' %}">감자</a>
                     </div>
                 </li>
 
                 <li><a href="#none" class="fish">수 산 물</a>
                     <div class="sub_menu">
-                        <a href="fish-mackerel.html">고등어</a>
-                        <a href="fish-hairtail.html">갈치</a>
-                        <a href="fish-croaker.html">꽁치</a>
+                        <a href="{% url 'fish-mackerel' %}">고등어</a>
+                        <a href="{% url 'fish-hairtail' %}">갈치</a>
+                        <a href="{% url 'fish-croaker' %}">꽁치</a>
                         <a href="fish-squid.html">물오징어</a>
-                        <a href="fish-shrimp.html">새우</a>
+                        <a href="{% url 'fish-shrimp' %}">새우</a>
                     </div>
                 </li>
             </ul>
@@ -131,16 +131,16 @@
 
         <!--section1-->
         <div class="first">
-            <a href="information.html">
+            <a href="{% url 'information' %}">
                 <img class="price" src="{% static 'logo,img/sitemap/물가정보.png' %}">
             </a>
-            <a href="newspage.html">
+            <a href="{% url 'news' %}">
                 <img class="news" src="{% static 'logo,img/sitemap/뉴스기사.png' %}">
             </a>
-            <a href="sale.html">
+            <a href="{% url 'sale' %}">
                 <img class="sale" src="{% static 'logo,img/sitemap/할인정보.png' %}">
             </a>
-            <a href="Q&A.html">
+            <a href="{% url 'QnA' %}">
                 <img class="service" src="{% static 'logo,img/sitemap/고객센터.png' %}">
             </a>
         </div>
@@ -153,10 +153,10 @@
                 <img class="mm" src="{% static 'logo,img/sitemap/과일.png' %}">
                 <br>
                 <div class="fruit_f">
-                    <a href="fruit-apple.html">
+                    <a href="{% url 'fruit-apple' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/사과.png' %}">
                     </a>
-                    <a href="fruit-pear.html">
+                    <a href="{% url 'fruit-pear' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/배.png' %}">
                     </a>
                     <a href="fruit-peach.html">
@@ -172,25 +172,25 @@
                 <img class="mm" src="{% static 'logo,img/sitemap/채소.png' %}">
                 <br>
                 <div class="vegetables_v">
-                    <a href="vegetable-carrot.html">
+                    <a href="{% url 'vegetable-carrot' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/당근.png' %}">
                     </a>
-                    <a href="vegetable-greenonion.html">
+                    <a href="{% url 'vegetable-greenonion' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/대파.png' %}">
                     </a>
-                    <a href="vegetable-garlic.html">
+                    <a href="{% url 'vegetable-garlic' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/마늘.png' %}">
                     </a>
-                    <a href="vegetable-daikon.html">
+                    <a href="{% url 'vegetable-daikon' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/무.png' %}">
                     </a>
-                    <a href="vegetable-cabbage.html">
+                    <a href="{% url 'vegetable-cabbage' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/배추.png' %}">
                     </a>
-                    <a href="vegetable-onion.html">
+                    <a href="{% url 'vegetable-onion' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/양파.png' %}">
                     </a>
-                    <a href="vegetable-cucumber.html">
+                    <a href="{% url 'vegetable-cucumber' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/오이.png' %}">
                     </a>
                 </div>
@@ -200,19 +200,19 @@
                 <img class="mm" src="{% static 'logo,img/sitemap/쌀잡곡.png' %}">
                 <br>
                 <div class="rice_r">
-                    <a href="rice-sweetpotato.html">
+                    <a href="{% url 'rice-sweetpotato' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/일반미.png' %}">
                     </a>
-                    <a href="rice-sticky.html">
+                    <a href="{% url 'rice-sticky' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/찹쌀.png' %}">
                     </a>
-                    <a href="rice-bean.html">
+                    <a href="{% url 'rice-bean' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/콩.png' %}">
                     </a>
-                    <a href="rice-sweetpotato.html">
+                    <a href="{% url 'rice-sweetpotato' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/고구마.png' %}">
                     </a>
-                    <a href="rice-potato.html">
+                    <a href="{% url 'rice-potato' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/감자.png' %}">
                     </a>
                 </div>
@@ -222,19 +222,19 @@
                 <img class="mm" src="{% static 'logo,img/sitemap/수산물.png' %}">
                 <br>
                 <div class="fish_f">
-                    <a href="fish-mackerel.html">
+                    <a href="{% url 'fish-mackerel' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/고등어.png' %}">
                     </a>
-                    <a href="fish-hairtail.html">
+                    <a href="{% url 'fish-hairtail' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/갈치.png' %}">
                     </a>
-                    <a href="fish-croaker.html">
+                    <a href="{% url 'fish-croaker' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/꽁치.png' %}">
                     </a>
                     <a href="fish-squid.html">
                         <img class="apple" src="{% static 'logo,img/sitemap/물오징어.png' %}">
                     </a>
-                    <a href="fish-shrimp.html">
+                    <a href="{% url 'fish-shrimp' %}">
                         <img class="apple" src="{% static 'logo,img/sitemap/새우.png' %}">
                     </a>
                 </div>
@@ -248,9 +248,9 @@
         <div class="f_wrap">
             <div class="wrap2">
                 <div class="tiny_footer">
-                    <a class="personal" href="{% static 'index.html">개인정보처리방침</a>
+                    <a class="personal" href="{% static '{% url 'index' %}">개인정보처리방침</a>
                     &nbsp;·&nbsp;
-                    <a class="email" href="{% static 'index.html">이메일무단수집거부</a>
+                    <a class="email" href="{% static '{% url 'index' %}">이메일무단수집거부</a>
                 </div>
             </div>
             <div class="adress">
