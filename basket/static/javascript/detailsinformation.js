@@ -4,7 +4,7 @@ $(function() {
     var urls = $(location).attr('pathname').split('/');
   
     $.ajax({
-      url:"http://127.0.0.1:8000/api/test/" + urls[2] + "/" + urls[3],
+      url:"http://127.0.0.1:8000/api/price/" + urls[2] + "/" + urls[3],
       type: "GET", // HTTP method type(GET, POST) 형식.
       dataType: "json",
     }).done(function (json) {
