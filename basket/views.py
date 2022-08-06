@@ -104,7 +104,7 @@ def fish_hairtail(request): # 갈치
 def fish_croaker(request): # 꽁치
     return render(request, 'basket/fish-croaker.html')
 
-def fish_squid(request): # 명태
+def fish_squid(request): # 물오징어
     return render(request, 'basket/fish-squid.html')
 
 def fish_shrimp(request): # 새우
