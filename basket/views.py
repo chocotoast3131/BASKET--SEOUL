@@ -76,8 +76,8 @@ def rice_white(request): # 쌀
 def rice_sticky(request): # 찹쌀
     return render(request, 'basket/rice-sticky.html')
 
-def rice_been(request): # 콩
-    return render(request, 'basket/rice-been.html')
+def rice_bean(request): # 콩
+    return render(request, 'basket/rice-bean.html')
 
 def rice_sweetpotato(request): # 고구마
     return render(request, 'basket/rice-sweetpotato.html')
