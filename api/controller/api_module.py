@@ -84,7 +84,6 @@ def graph_func(res_json): # 그래프
             "marketname": graph_["marketname"], \
             "today": graph_["regday"], \
             "price": graph_["price"]
-            #format(int(''.join(map(str, graph_["price"])).replace(",", "")))
         }
         res_graph_f.append(res_graph_)
     return res_graph_f

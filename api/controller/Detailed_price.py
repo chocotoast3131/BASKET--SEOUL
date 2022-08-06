@@ -34,4 +34,4 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     return df_dict
 
 
-print(Detailed_graph('시금치')) #수산물 키워드는 전부 에러발생
+print(Detailed_graph('당근')) #수산물 키워드는 전부 에러발생
