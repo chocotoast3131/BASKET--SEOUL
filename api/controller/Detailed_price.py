@@ -1,6 +1,6 @@
 #상세정보/품목별함수
-from .api_module import graph_func, class_func1
-from .condition import Detailed_graph_code, Detailed_code_name
+from api_module import graph_func, class_func1
+from condition import Detailed_graph_code, Detailed_code_name
 import pandas as pd
 import json
 
@@ -12,7 +12,7 @@ def Detailed(name, kindname): #품종별로도 볼수있어야함
     df_json = df_drop.to_json(orient = 'records')
     df_dict = json.loads(df_json)
     return df_dict
-# print(Detailed("쌀_잡곡", "고구마")) #확인용 #kindname에 있는데 출력되지 않는 데이터는 없는 데이터. 존재하는 데이터만 나옴
+# print(Detailed("과일", "복숭아")) #확인용 #kindname에 있는데 출력되지 않는 데이터는 없는 데이터. 존재하는 데이터만 나옴
 
 
 def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래프용 데이터
@@ -24,9 +24,14 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     df_del_marketname = (df_drop['marketname'] == '경동') #values는 마켓명. 입력한 값만 출력됨 / 1차적으로 값을 거름
     del_marketname = df_drop[df_del_marketname]
     del del_marketname['marketname'] #그래프를 위한 데이터는 품종명, 날짜, 가격만 필요하므로 마켓명 열을 삭제함
+    index2 = del_marketname[del_marketname['price'] == '-'].index
+    del_marketname2 = del_marketname.drop(index2)
+    del_marketname2['price'] = del_marketname2['price'].apply(lambda x: x.replace(',', ''))
 
-    df_json = del_marketname.to_json(orient = 'records')
+    df_json = del_marketname2.to_json(orient = 'records')
     df_dict = json.loads(df_json)
+
     return df_dict
 
-# print(Detailed_graph('쌀')) #수산물 키워드는 전부 에러발생
+
+print(Detailed_graph('시금치')) #수산물 키워드는 전부 에러발생

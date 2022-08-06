@@ -71,7 +71,7 @@ def item_func(res_json):
         res_item_f.append(res_item_)
     return res_item_f
 
-def graph_func(res_json): # 품목별
+def graph_func(res_json): # 그래프
     res_graph_f = list()
     if type(res_json['data']) is list:
         if res_json['data'][0] == "001":
@@ -81,10 +81,10 @@ def graph_func(res_json): # 품목별
     for graph_ in res_json['data']['item']:
         res_graph_ = { \
             "itemname": graph_["itemname"], \
-            "kindname": graph_["kindname"], \
             "marketname": graph_["marketname"], \
             "today": graph_["regday"], \
             "price": graph_["price"]
+            #format(int(''.join(map(str, graph_["price"])).replace(",", "")))
         }
         res_graph_f.append(res_graph_)
     return res_graph_f
