@@ -27,11 +27,14 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     index2 = del_marketname[del_marketname['price'] == '-'].index
     del_marketname2 = del_marketname.drop(index2)
     del_marketname2['price'] = del_marketname2['price'].apply(lambda x: x.replace(',', ''))
-
+    del_marketname2['price'] = pd.to_numeric(del_marketname2['price'])
     df_json = del_marketname2.to_json(orient = 'records')
     df_dict = json.loads(df_json)
 
     return df_dict
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5c76adcc86e77d7fab194b56bce14fd64278d086
 # print(Detailed_graph('당근')) #수산물 키워드는 전부 에러발생
