@@ -334,7 +334,7 @@ header .header_tiny .tiny_menu>a:hover {
     width: 1000px;
     margin-top: 50px;
     margin-left: 550px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .what {
@@ -398,6 +398,47 @@ header .header_tiny .tiny_menu>a:hover {
     font-weight: 470;
     color: #333;
 }
+
+
+
+/*search_result*/
+
+.search{
+    width: 800px;
+    height: 800px;
+    margin-left: 690px;
+}
+
+.search_name{
+    text-align: center;
+    margin-bottom: 35px;
+}
+.search1{
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* footer */

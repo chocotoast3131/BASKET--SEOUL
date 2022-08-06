@@ -32,9 +32,4 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     df_dict = json.loads(df_json)
 
     return df_dict
-
-<<<<<<< HEAD
-
-=======
->>>>>>> 5c76adcc86e77d7fab194b56bce14fd64278d086
 # print(Detailed_graph('당근')) #수산물 키워드는 전부 에러발생
