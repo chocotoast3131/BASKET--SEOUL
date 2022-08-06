@@ -25,7 +25,7 @@ urlpatterns = [
     path('information/과일/사과/', views.fruit_apple, name='fruit-apple'),
     path('information/과일/배/', views.fruit_pear, name='fruit-pear'),
     path('information/과일/레몬/', views.fruit_peach, name='fruit-lemon'),
-    path('information/과일/파인애플/', views.fruit_grapes, name='fruit-pineapple'),
+    path('information/과일/파인애플/', views.fruit_grapes, name='fruit-fineapple'),
     # 채소
     path('information/채소/오이/', views.vegetable_cucumber, name='vegetable-cucumber'),
     path('information/채소/당근/', views.vegetable_carrot, name='vegetable-carrot'),

@@ -54,7 +54,7 @@ def fruit_peach(request): # 레몬
     return render(request, 'basket/fruit-lemon.html')
 
 def fruit_grapes(request): # 파인애플
-    return render(request, 'basket/fruit-pineapple.html')
+    return render(request, 'basket/fruit-fineapple.html')
 
 # 채소
 
