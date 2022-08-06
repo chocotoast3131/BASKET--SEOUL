@@ -120,11 +120,42 @@
         <img class="what" src="{% static 'logo,img/무엇을 찾으시나요.png' %}">
 
         <div class="header">
+            <form action="{% url 'searched' %}" method="get">
             <i class="fas fa-search fa-xl"></i>
-            <input onkeyup="filter()" type="text" id="value" placeholder=" 검색어를 입력해주세요">
+            <input onkeyup="filter()" type="text" name="name" id="value" placeholder=" 검색어를 입력해주세요">
+            </form>
+
         </div>
     </div>
-
+        <!--search result-->
+        <div class="search">
+            <h1 class="search_name"><i class="fa-regular fa-file-magnifying-glass"></i> 검색어 "@@"에 대한 통합검색 결과는 "%"건입니다.</h1>
+            <br>
+            <table class="search1">
+                <thead>
+                    <tr>
+                        <td>품목명</td>
+                        <td>분류</td>
+                        <td>품종명</td>
+                    </tr>
+                </thead>
+    
+                <tbody>
+            {% if results %}
+                {% for result in results %}
+                    <tr>
+                        <td>{{ result.category_name }}</td>
+                        <td><a href="/information/{{ result.category_name }}/{{ result.item_name }}" id="code">{{ result.item_name }}</a></td>
+                        <td>{{ result.kind_name }}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+    
+                </tbody>
+    
+            </table>
+    
+        </div>
 
 
     <!-- footer -->
