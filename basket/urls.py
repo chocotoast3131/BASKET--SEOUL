@@ -43,7 +43,7 @@ urlpatterns = [
     path('information/수산물/고등어/', views.fish_mackerel, name='fish-mackerel'),
     path('information/수산물/갈치/', views.fish_hairtail, name='fish-hairtail'),
     path('information/수산물/꽁치/', views.fish_croaker, name='fish-croaker'),
-    path('information/수산물/명태/', views.fish_squid, name='fish-squid'),
+    path('information/수산물/물오징어/', views.fish_squid, name='fish-squid'),
     path('information/수산물/새우/', views.fish_shrimp, name='fish-shrimp'),
     
 ]
