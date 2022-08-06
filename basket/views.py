@@ -54,8 +54,8 @@ def vegetable_cabbage(request): # 배추
 def vegetable_cucumber(request): # 오이
     return render(request, 'basket/vegetable-cucumber.html')
 
-def vegetable_radish(request): # 무
-    return render(request, 'basket/vegetable-redish.html')
+def vegetable_daikon(request): # 무
+    return render(request, 'basket/vegetable-daikon.html')
 
 def vegetable_carrot(request): # 당근
     return render(request, 'basket/vegetable-carrot.html')
@@ -70,8 +70,8 @@ def vegetable_garlic(request): # 마늘
     return render(request, 'basket/vegetable-garlic.html')
 
 # 쌀/잡곡
-def rice_rice(request): # 쌀
-    return render(request, 'basket/rice-rice.html')
+def rice_white(request): # 쌀
+    return render(request, 'basket/rice-white.html')
 
 def rice_sticky(request): # 찹쌀
     return render(request, 'basket/rice-sticky.html')
@@ -89,11 +89,11 @@ def rice_potato(request): # 감자
 def fish_mackerel(request): # 고등어
     return render(request, 'basket/fish-mackerel.html')
 
-def fish_cutlassfish(request): # 갈치
-    return render(request, 'basket/fish-cutlassfish.html')
+def fish_hairtail(request): # 갈치
+    return render(request, 'basket/fish-hairtail.html')
 
-def fish_saury(request): # 꽁치
-    return render(request, 'basket/fish-saury.html')
+def fish_croaker(request): # 꽁치
+    return render(request, 'basket/fish-croaker.html')
 
 def fish_pollack(request): # 명태
     return render(request, 'basket/fish-pollack.html')

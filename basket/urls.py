@@ -23,21 +23,21 @@ urlpatterns = [
     # 채소
     path('information/채소/배추/', views.vegetable_cabbage, name='vegetable-cabbage'),
     path('information/채소/오이/', views.vegetable_cucumber, name='vegetable-cucumber'),
-    path('information/채소/무/', views.vegetable_radish, name='vegetable-radish'),
+    path('information/채소/무/', views.vegetable_daikon, name='vegetable-daikon'),
     path('information/채소/당근/', views.vegetable_carrot, name='vegetable-carrot'),
     path('information/채소/양파/', views.vegetable_onion, name='vegetable-onion'),
     path('information/채소/파/', views.vegetable_greenonion, name='vegetable-greenonion'),
     path('information/채소/깐마늘(국산)/', views.vegetable_garlic, name='vegetable-garlic'),
     # 쌀/잡곡
-    path('information/쌀_잡곡/쌀/', views.rice_rice, name='rice-rice'),
+    path('information/쌀_잡곡/쌀/', views.rice_white, name='rice-white'),
     path('information/쌀_잡곡/찹쌀/', views.rice_sticky, name='rice-sticky'),
     path('information/쌀_잡곡/콩/', views.rice_been, name='rice-been'),
     path('information/쌀_잡곡/고구마/', views.rice_sweetpotato, name='rice-sweetpotato'),
     path('information/쌀_잡곡/감자/', views.rice_potato, name='rice-potato'),
     # 수산물
     path('information/수산물/고등어/', views.fish_mackerel, name='fish-mackerel'),
-    path('information/수산물/갈치/', views.fish_cutlassfish, name='fish-cutlassfish'),
-    path('information/수산물/꽁치/', views.fish_saury, name='fish-saury'),
+    path('information/수산물/갈치/', views.fish_hairtail, name='fish-hairtail'),
+    path('information/수산물/꽁치/', views.fish_croaker, name='fish-croaker'),
     path('information/수산물/명태/', views.fish_pollack, name='fish-pollack'),
     path('information/수산물/새우/', views.fish_shrimp, name='fish-shrimp'),
     
