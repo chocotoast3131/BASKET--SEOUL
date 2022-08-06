@@ -42,11 +42,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
         case "쌀_잡곡", "감자":
             Detailed_print = f_class__('100', day)
 
-        case "채소", "상추":
-            Detailed_print = f_class__('200', day)
         case "채소", "오이":
-            Detailed_print = f_class__('200', day)
-        case "채소", "시금치":
             Detailed_print = f_class__('200', day)
         case "채소", "당근":
             Detailed_print = f_class__('200', day)
@@ -96,12 +92,8 @@ def Detailed_graph_code(value_name):
         case '감자':
             graph_print = f_item__('152', '01', months, day)
 
-        case '상추':
-            graph_print = f_item__('214', '01', months, day)
         case '오이':
             graph_print = f_item__('223', '02', months, day)
-        case '시금치':
-            graph_print = f_item__('213', '00', months, day)
         case '당근':
             graph_print = f_item__('232', '01', months, day)
         case '양파':
