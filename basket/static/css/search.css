@@ -250,83 +250,83 @@ header .header_tiny .tiny_menu>a:hover {
     left: 0;
     z-index: 30;
     box-shadow: 0 5px 15px rgba(78, 78, 78, 0.15);
-  }
-  
-  .left_logo .bgo {
+}
+
+.left_logo .bgo {
     margin-top: 20%;
     margin-left: 55px;
     color: #000;
     font-size: 18px;
     font-weight: 600;
-  }
-  
-  .left_logo .second_hr {
+}
+
+.left_logo .second_hr {
     margin-left: 53px;
     margin-top: 15px;
     width: 50px;
     height: 4px;
     background-color: #000;
     border: 0;
-  }
-  
-  .l_menu .left {
+}
+
+.l_menu .left {
     margin-top: 15px;
     color: black;
     line-height: 50px;
     font-size: 15px;
     font-weight: bold;
     text-align: center;
-  }
-  
-  .left_m li>.fruit:hover {
+}
+
+.left_m li>.fruit:hover {
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .left_m li>.vegetables:hover {
+}
+
+.left_m li>.vegetables:hover {
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .left_m li>.rice:hover {
+}
+
+.left_m li>.rice:hover {
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .left_m li>.fish:hover {
+}
+
+.left_m li>.fish:hover {
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  
-  
-  /* sub_menu */
-  .left .left_m .sub_menu {
+}
+
+
+
+/* sub_menu */
+.left .left_m .sub_menu {
     transition: all .3s;
-  }
-  
-  .left .left_m .sub_menu>a {
+}
+
+.left .left_m .sub_menu>a {
     display: block;
     font-size: 15px;
     font-weight: lighter;
     line-height: 35px;
-  }
-  
-  .left_m li:hover a {
+}
+
+.left_m li:hover a {
     font-weight: bold;
-  }
-  
-  .left_m a:hover {
+}
+
+.left_m a:hover {
     text-decoration: underline;
-  }
-  
-  .left_m .sub_menu {
+}
+
+.left_m .sub_menu {
     display: none;
-  }
-  
-  .left_m li:hover .sub_menu {
+}
+
+.left_m li:hover .sub_menu {
     display: block;
-  }
+}
 
 /*search*/
 
@@ -334,7 +334,7 @@ header .header_tiny .tiny_menu>a:hover {
     width: 1000px;
     margin-top: 50px;
     margin-left: 550px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .what {
@@ -353,7 +353,6 @@ header .header_tiny .tiny_menu>a:hover {
 .header {
     text-transform: uppercase;
     margin-left: 60px;
-    margin-bottom: 8px;
 }
 
 #value {
@@ -370,71 +369,65 @@ header .header_tiny .tiny_menu>a:hover {
     outline: none;
 }
 
-.container {
-    padding: 1%;
-    margin-left: 220px;
+
+.search-r {
+    width: 800px;
+    height: 80px;
+    margin-left: 740px;
+    margin-bottom: 20px;
 }
 
-.item {
-    margin: 3% 0px;
+.search-r .s-n {
+    width: 150px;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.search-r2 .search-r2 {
     display: flex;
-    align-items: center;
 }
 
-.icon {
-    width: 25px;
-    height: 25px;
-    background: #247b47;
-    color: white;
+.search-r .s-n1 {
+    width: 80px;
+    height: 20px;
+    padding: 8px;
+    margin-left: 10px;
     font-size: 15px;
+    color: black;
     text-align: center;
-    line-height: 25px;
-    border-radius: 50%;
-    margin-right: 8px;
-}
-
-.name {
-    font-size: 17px;
-    font-weight: 470;
-    color: #333;
+    border-radius: 25px;
+    border: 1px solid rgb(165, 164, 164);
 }
 
 
 
 /*search_result*/
 
-.search{
-    width: 800px;
-    height: 800px;
-    margin-left: 690px;
-}
-
-.search_name{
-    text-align: center;
-    margin-bottom: 35px;
-}
-.search1{
-    width: 800px;
+.search {
+    width: 1000px;
     height: 500px;
-    text-align: center;
+    margin-left: 580px;
 }
 
+.search-wrap {
+    border: solid black;
+}
 
+.search-result .result-kind {
+    font-size: 30px;
+    font-weight: 800;
+}
 
+.search-result .result-d {
+    font-size: 30px;
+    font-weight: 800;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.search-result .result-kind {
+    font-size: 30px;
+    font-weight: 800;
+}
 
 
 
@@ -449,9 +442,9 @@ header .header_tiny .tiny_menu>a:hover {
     background: #f7f1e7;
     float: right;
     bottom: 0;
-    margin-top: 150px;
+    margin-top: 200px;
     margin-bottom: 0;
-    transform : translateY(100%);
+    transform: translateY(100%);
     padding: 20px 0px 0px 0px;
     border-radius: 55px 0px 0px 0px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 26px 0px;

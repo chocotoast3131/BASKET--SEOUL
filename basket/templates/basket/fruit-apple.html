@@ -135,44 +135,6 @@
         </div>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="12">
-                <canvas id="myChartOne"></canvas>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        let myChartOne = document.getElementById('myChartOne').getContext('2d');
-
-        let lineChart = new Chart(myChartOne, {
-            type: 'line',
-            data: {
-                labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월'],
-                datasets: [{
-                    label: '가격',
-                    data: [
-                        1000,
-                        2000,
-                        3000,
-                        4000,
-                        5000,
-                        6000,
-                        7000,
-                        8000,
-                        9000,
-                        10000,
-                        20000,
-                        30000,
-                        40000,
-                        60000
-                    ]
-                }]
-            }
-        })
-    </script>
-
 
     <!--footer-->
     <div class="footer">

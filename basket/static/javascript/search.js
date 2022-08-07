@@ -1,16 +1,20 @@
-function filter() {
+$.ajax("http://127.0.0.1:8000/api/get/", {
+    type: "GET", // HTTP method type(GET, POST) 형식.
+    data: $("#formsearch"), // Json 형식의 데이터.
+    dataType: "json",
+}).done(function (json) {
+    let items = json;
 
-  var value, name, item, i;
+    let table_body = items
+        .map(
+            (item) => `<tr>
+                    <td>${item.item_name}</td>
+                    <td>${item.unit}</td>
+                    <td>${item.past_month}</td>
+                    <td>${item.today}</td>
+                  </tr>`
+        )
+        .reduce((prev, curr) => prev + curr);
 
-  value = document.getElementById("value").value.toUpperCase();
-  item = document.getElementsByClassName("item");
-
-  for (i = 0; i < item.length; i++) {
-    name = item[i].getElementsByClassName("name");
-    if (name[0].innerHTML.toUpperCase().indexOf(value) > -1) {
-      item[i].style.display = "flex";
-    } else {
-      item[i].style.display = "none";
-    }
-  }
-}
+    $("#table tbody").html(table_body);
+});
