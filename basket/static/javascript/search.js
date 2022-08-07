@@ -1,4 +1,4 @@
-$.ajax("http://127.0.0.1:8000/api/get/", {
+$.ajax("http://127.0.0.1:8000/api/price/", {
     type: "GET", // HTTP method type(GET, POST) 형식.
     data: $("#formsearch"), // Json 형식의 데이터.
     dataType: "json",
