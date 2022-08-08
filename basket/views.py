@@ -39,7 +39,7 @@ def search(request):
 def searched(request): # 검색결과
     name = request.GET.get("name") # 쿼리스트링 받기
     results = ItemName.objects.filter(Q(category_name__icontains = name)|Q(item_name__icontains = name)|Q(kind_name__icontains = name)) # Q 조건문, name이 ~이거나 ~인것
-    return render(request, 'basket/search.html', {"results":results})
+    return render(request, 'basket/search.html', {"results":results, "name":name})
 
 # 상세정보
 def detailed(request,category,itemname):
