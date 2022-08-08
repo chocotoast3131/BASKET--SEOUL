@@ -119,7 +119,7 @@ def Detailed_graph_code(value_name):
         case '꽁치':
             graph_print = f_item__('612', '01', months, day, '05')
         case '물오징어':
-            graph_print = f_item__('619', '02', months, day, '05')
+            graph_print = f_item__('619', '01', months, day, '05')
         case '새우':
             graph_print = f_item__('654', '01', months, day, '05')
 
