@@ -1,9 +1,43 @@
+from unicodedata import category
 from django.shortcuts import render
 from django.db.models import Q
 
 from api.models import ItemName
 
 # Create your views here.
+
+# itemname_map={
+#     "category":{
+#         "fruit":"과일",
+#         "rice":"쌀_잡곡",
+#         "vegetable":"채소",
+#         "fish":"수산물",
+#     },
+#     "itemname":{
+#         "apple":"사과",
+#         "pear":"배",
+#         "lemon":"레몬",
+#         "fineapple":"파인애플",
+#         "cucumber":"오이",
+#         "carrot":"당근",
+#         "onion":"양파",
+#         "greenonion":"파",
+#         "garlic":"깐마늘(국산)",
+#         "white":"쌀",
+#         "sticky":"찹쌀",
+#         "bean":"콩",
+#         "sweetpotato":"고구마",
+#         "potato":"감자",
+#         "mackerel":"고등어",
+#         "hairtail":"갈치",
+#         "croaker":"꽁치",
+#         "squid":"물오징어",
+#         "shrimp":"새우",
+
+
+#     }
+# }
+
 
 def index(request):
     return render(request,'basket/index.html')
@@ -43,7 +77,9 @@ def searched(request): # 검색결과
     return render(request, 'basket/search.html', {"results":results})
 
 # 상세정보
-# 과일
+def detailed(request,category,itemname):
+    return render(request, 'basket/detailed.html', {"category":category,"itemname":itemname})
+# # 과일
 def fruit_apple(request): # 사과
     return render(request, 'basket/fruit-apple.html')
 
