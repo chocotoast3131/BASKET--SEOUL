@@ -20,7 +20,8 @@ urlpatterns = [
     re_path(r'^search/\?[a-z]{4}\=[/가-힣]{1,7}/$', views.searched, name="searched"),
 
     # 상세정보
-    # 과일
+    re_path(r'^information/(?P<category>(과일|채소|쌀_잡곡|수산물))/(?P<itemname>[가-힣]+)/$', views.detailed, name="detailed"),
+    # # 과일
     path('information/과일/사과/', views.fruit_apple, name='fruit-apple'),
     path('information/과일/배/', views.fruit_pear, name='fruit-pear'),
     path('information/과일/레몬/', views.fruit_peach, name='fruit-lemon'),
