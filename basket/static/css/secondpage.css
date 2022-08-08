@@ -366,7 +366,6 @@ header .header_tiny .tiny_menu>a:hover {
     text-align: center;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    border: solid black;
 }
 
 .conbox::-webkit-scrollbar {
@@ -405,11 +404,13 @@ header .header_tiny .tiny_menu>a:hover {
 
 
 /*line graph*/
+
 .container{
     margin-left: 330px;
     width: 1380px;
     margin-bottom: 300px;
 }
+
 
 
 
@@ -421,7 +422,7 @@ header .header_tiny .tiny_menu>a:hover {
     width: 85%;
     height: 160px;
     background: #f7f1e7;
-    margin-top: 100px;
+    margin-top: 50px;
     float: right;
     padding: 20px 0px 0px 0px;
     border-radius: 55px 0px 0px 0px;
