@@ -31,4 +31,22 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     df_json = del_marketname2.to_json(orient = 'records')
     df_dict = json.loads(df_json)
     return df_dict
-# print(Detailed_graph('꽁치'))
+print(Detailed_graph('사과'))
+
+def marine_products_graph(value_name): #수산물 그래프용 함수
+    
+    m_df = pd.DataFrame(graph_func(Detailed_graph_code(value_name)))
+
+    m_index1 = m_df[m_df['itemname'] != value_name].index #제외한 값 전부 삭제(null값 지우려고 넣음). ex)['itemname'] : ['쌀'] -> value_name에 쌀 저장
+    m_df_drop = m_df.drop(m_index1)
+    m_df_del_marketname = (m_df_drop['marketname'] == 'A-유통') #values는 마켓명. 입력한 값만 출력됨 / 1차적으로 값을 거름
+    m_del_marketname = m_df_drop[m_df_del_marketname]
+    del m_del_marketname['marketname'] #그래프를 위한 데이터는 품종명, 날짜, 가격만 필요하므로 마켓명 열을 삭제함
+    m_index2 = m_del_marketname[m_del_marketname['price'] == '-'].index
+    m_del_marketname2 = m_del_marketname.drop(m_index2)
+    m_del_marketname2['price'] = m_del_marketname2['price'].apply(lambda x: x.replace(',', ''))
+    m_del_marketname2['price'] = pd.to_numeric(m_del_marketname2['price'])
+    m_df_json = m_del_marketname2.to_json(orient = 'records')
+    m_df_dict = json.loads(m_df_json)
+    return m_df_dict
+print(marine_products_graph('새우'))
