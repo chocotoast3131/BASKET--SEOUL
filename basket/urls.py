@@ -2,6 +2,7 @@ from . import views
 from django.urls import path,re_path
 
 urlpatterns = [
+    
     # main,sub 페이지
     path('', views.index, name='index'),
     path('information/', views.information, name='information'),
@@ -14,13 +15,10 @@ urlpatterns = [
     path('sale/7-Eleven/', views.SevenEleven, name='7-Eleven'),
     path('sale/CU/', views.CU, name="CU"),
 
-
     # 검색
     path('search/', views.search, name='search'), # 검색페이지
     re_path(r'^search/\?[a-z]{4}\=[/가-힣]{1,7}/$', views.searched, name="searched"),
 
     # 상세정보
-    re_path(r'^information/(?P<category>(과일|채소|쌀_잡곡|수산물))/(?P<itemname>[가-힣]+)/$', views.detailed, name="detailed"),
-
-    
+    re_path(r'^information/(?P<category>(과일|채소|쌀_잡곡|수산물))/(?P<itemname>[가-힣]+)/$', views.detailed, name="detailed"), 
 ]

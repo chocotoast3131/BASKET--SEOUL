@@ -6,6 +6,7 @@ from api.models import ItemName
 
 # Create your views here.
 
+# main, sub 페이지
 def index(request):
     return render(request,'basket/index.html')
 
@@ -21,7 +22,7 @@ def QnA(request):
 def sitemap(request):
     return render(request, 'basket/sitemap.html')
 
-# 편의점별 할인정보 
+# 편의점 할인정보 
 def GS25(request): 
     return render(request, 'basket/sale.html')
 
