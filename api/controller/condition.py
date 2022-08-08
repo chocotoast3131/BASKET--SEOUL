@@ -1,4 +1,4 @@
-from .api_module import f_class__, f_item__
+from api_module import f_class__, f_item__
 from datetime import date, timedelta
 
 def price_code_name(name):
@@ -82,45 +82,45 @@ def Detailed_graph_code(value_name):
 
     match(value_name):
         case '쌀':
-            graph_print = f_item__('111', '01', months, day)
+            graph_print = f_item__('111', '01', months, day, '04')
         case '찹쌀':
-            graph_print = f_item__('112', '01', months, day)
+            graph_print = f_item__('112', '01', months, day, '04')
         case '콩':
-            graph_print = f_item__('141', '01', months, day)
+            graph_print = f_item__('141', '01', months, day, '04')
         case '고구마':
-            graph_print = f_item__('151', '00', months, day)
+            graph_print = f_item__('151', '00', months, day, '04')
         case '감자':
-            graph_print = f_item__('152', '01', months, day)
+            graph_print = f_item__('152', '01', months, day, '04')
 
         case '오이':
-            graph_print = f_item__('223', '02', months, day)
+            graph_print = f_item__('223', '02', months, day, '04')
         case '당근':
-            graph_print = f_item__('232', '01', months, day)
+            graph_print = f_item__('232', '01', months, day, '04')
         case '양파':
-            graph_print = f_item__('245', '00', months, day)
+            graph_print = f_item__('245', '00', months, day, '04')
         case '파':
-            graph_print = f_item__('246', '00', months, day)
+            graph_print = f_item__('246', '00', months, day, '04')
         case '깐마늘(국산)':
-            graph_print = f_item__('258', '01', months, day)
+            graph_print = f_item__('258', '01', months, day, '04')
 
         case '사과':
-            graph_print = f_item__('411', '05', months, day)
+            graph_print = f_item__('411', '05', months, day, '04')
         case '배':
-            graph_print = f_item__('412', '01', months, day)
+            graph_print = f_item__('412', '01', months, day, '04')
         case '레몬':
-            graph_print = f_item__('424', '00', months, day)
+            graph_print = f_item__('424', '00', months, day, '04')
         case '파인애플':
-            graph_print = f_item__('420', '02', months, day)
+            graph_print = f_item__('420', '02', months, day, '04')
 
         case '고등어':
-            graph_print = f_item__('611', '03', months, day)
+            graph_print = f_item__('611', '03', months, day, '05')
         case '갈치':
-            graph_print = f_item__('613', '01', months, day)
+            graph_print = f_item__('613', '02', months, day, '05')
         case '꽁치':
-            graph_print = f_item__('612', '01', months, day)
+            graph_print = f_item__('612', '01', months, day, '05')
         case '물오징어':
-            graph_print = f_item__('615', '01', months, day)
+            graph_print = f_item__('619', '02', months, day, '05')
         case '새우':
-            graph_print = f_item__('654', '01', months, day)
+            graph_print = f_item__('654', '01', months, day, '05')
 
     return graph_print

@@ -93,7 +93,7 @@ def f_class__(p_item_category_code, p_regday, p_product_cls_code='01', p_country
         p_product_cls_code=p_product_cls_code, p_country_code=p_country_code, \
         action='dailyPriceByCategoryList')
     
-def f_item__(p_itemcode, p_kindcode, p_startday, p_endday, p_productclscode='01', p_countrycode='1101', p_productrankcode='04'):
+def f_item__(p_itemcode, p_kindcode, p_startday, p_endday, p_productrankcode, p_productclscode='01', p_countrycode='1101'):
     return open_api(p_itemcode=p_itemcode, p_startday=p_startday, p_endday=p_endday, p_kindcode=p_kindcode, \
         p_productclscode=p_productclscode, p_countrycode=p_countrycode, p_productrankcode=p_productrankcode, \
         action='periodProductList')
