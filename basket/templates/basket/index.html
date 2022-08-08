@@ -8,10 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="{% static 'logo,img/webicon2.png' %}">
 
     <!--font-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://webfontworld.github.io/GmarketSans/GmarketSans.css" rel="stylesheet">
+    {% include "./layout/font.html" %}
 
     <!--javascript-->
     <script src="{% static 'javascript/jquery-3.6.0.min.js' %}"></script>
@@ -23,94 +20,13 @@
 <body>
 
     <!-- nav -->
-
-    <header>
-        <div class="header_tiny">
-            <div class="tiny_menu">
-                <a href="{% url 'index' %}">HOME</a><a href="#"></a>|<a href="{% url 'sitemap' %}">전체메뉴</a>
-            </div>
-        </div>
-
-        <div class="first">
-            <div class="logo">
-                <a href="{% url 'index' %}">
-                    <img src="{% static 'logo,img/logo/Logo.png' %}" alt="logo">
-                </a>
-            </div>
-
-            <div class="lnb">
-                <ul class="main_menu">
-                    <li><a href="{% url 'information' %}" class="btn1">물가정보</a></li>
-
-                    <li><a href="{% url 'news' %}" class="btn2">뉴스기사</a></li>
-
-                    <li><a href="{% url 'sale' %}" class="btn3">할인정보</a></li>
-
-                    <li><a href="{% url 'QnA' %}" class="btn4">고객센터</a></li>
-
-                    <li><a href="{% url 'search' %}" class="btn5"><img src="{% static 'logo,img/돋보기.png' %}"></a></li>
-
-                </ul>
-            </div>
-        </div>
-    </header>
+    {% include "./layout/nav.html" %}
 
 
 
     <!-- left_menu -->
 
-    <div class="l_menu">
-        <div class="left_logo">
-            <br><br><br><br><br><br><br><br><br>
-            <img class="bgo" src="{% static 'logo,img/바로가기_left.png' %}">
-            <hr class="second_hr">
-        </div>
-
-        <div class="left">
-            <ul class="left_m">
-                <li><a href="#none" class="fruit">과 일</a>
-                    <div class="sub_menu">
-                        <a href="/information/과일/사과/">사과</a>
-                        <a href="/information/과일/배/">배</a>
-                        <a href="/information/과일/레몬/">레몬</a>
-                        <a href="/information/과일/파인애플/">파인애플</a>
-                    </div>
-                </li>
-
-                <li><a href="#none" class="vegetables">채 소</a>
-                    <div class="sub_menu">
-                        <a href="/information/채소/당근/">당근</a>
-                        <a href="/information/채소/파/">대파</a>
-                        <a href="/information/채소/마늘/">마늘</a>
-                        <a href="/information/채소/양파/">양파</a>
-                        <a href="/information/채소/오이/">오이</a>
-                    </div>
-                </li>
-
-                <li><a href="#none" class="rice">쌀 / 잡곡</a>
-                    <div class="sub_menu">
-                        <a href="/information/쌀_잡곡/쌀/">일반미</a>
-                        <a href="/information/쌀_잡곡/찹쌀/">찹쌀</a>
-                        <a href="/information/쌀_잡곡/콩/">콩</a>
-                        <a href="/information/쌀_잡곡/고구마/">고구마</a>
-                        <a href="/information/쌀_잡곡/감자/">감자</a>
-                    </div>
-                </li>
-
-                <li><a href="#none" class="fish">수 산 물</a>
-                    <div class="sub_menu">
-                        <a href="/information/수산물/고등어/">고등어</a>
-                        <a href="/information/수산물/갈치/">갈치</a>
-                        <a href="/information/수산물/꽁치/">꽁치</a>
-                        <a href="/information/수산물/물오징어/">물오징어</a>
-                        <a href="/information/수산물/새우/">새우</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-
-
+    {% include "./layout/left_menu.html" %}
 
     <!-- banner / section1 -->
     <div class="wrap1">
@@ -153,7 +69,8 @@
     <div class="section3">
         <a href="https://www.10000recipe.com/"><img class="recipe" src="{% static 'logo,img/추천레시피.png' %}"></a>
 
-        <a href="https://www.sbiz.or.kr/sijangtong/nation.do"><img class="traditional" src="{% static 'logo,img/전통시장.png' %}"></a>
+        <a href="https://www.sbiz.or.kr/sijangtong/nation.do"><img class="traditional"
+                src="{% static 'logo,img/전통시장.png' %}"></a>
 
         <a href="http://www.nongsaro.go.kr/portal/ps/psr/psrb/monthFdLst.ps?menuId=PS03924"><img class="ingredients"
                 src="{% static 'logo,img/식재료노하우.png' %}"></a>
@@ -190,9 +107,12 @@
                 <div class="s_inner">
                     <p>지금 바로 장보러 떠나세요!</p>
                     <div class="shopping">
-                        <a href="https://www.coupang.com/"><img class="cp" src="{% static 'logo,img/쿠팡_go.png' %}"></a> &nbsp;&nbsp;
-                        <a href="https://www.kurly.com/"><img class="mc" src="{% static 'logo,img/마켓컬리_go.png' %}"></a> &nbsp;&nbsp;
-                        <a href="http://www.gmarket.co.kr/"><img class="gm" src="{% static 'logo,img/gmarket_go.png' %}"></a>
+                        <a href="https://www.coupang.com/"><img class="cp" src="{% static 'logo,img/쿠팡_go.png' %}"></a>
+                        &nbsp;&nbsp;
+                        <a href="https://www.kurly.com/"><img class="mc" src="{% static 'logo,img/마켓컬리_go.png' %}"></a>
+                        &nbsp;&nbsp;
+                        <a href="http://www.gmarket.co.kr/"><img class="gm"
+                                src="{% static 'logo,img/gmarket_go.png' %}"></a>
                         &nbsp;&nbsp;
                         <a href="https://emart.ssg.com/"><img class="ssg" src="{% static 'logo,img/ssg_go.png' %}"></a>
                     </div>
@@ -215,27 +135,8 @@
 
 
 
-
-
-
-
-
     <!--footer-->
-    <div class="footer">
-        <div class="f_wrap">
-            <div class="wrap2">
-                <div class="tiny_footer">
-                    <a class="personal" href="#">개인정보처리방침</a>
-                    &nbsp;·&nbsp;
-                    <a class="email" href="#">이메일무단수집거부</a>
-                </div>
-            </div>
-            <div class="adress">
-                <p>서울 서초구 바우뫼로20길 8 &nbsp;&nbsp;&nbsp; 대표전화 : 02-1234-5678</p>
-                <p>COPYRIGHT © 바스켓 서울. ALL RIGHTS RESEVED.</p>
-            </div>
-        </div>
-    </div>
+    {% include "./layout/footer.html" %}
 
 </body>
 
