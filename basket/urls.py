@@ -21,28 +21,6 @@ urlpatterns = [
 
     # 상세정보
     re_path(r'^information/(?P<category>(과일|채소|쌀_잡곡|수산물))/(?P<itemname>[가-힣]+)/$', views.detailed, name="detailed"),
-    # # 과일
-    path('information/과일/사과/', views.fruit_apple, name='fruit-apple'),
-    path('information/과일/배/', views.fruit_pear, name='fruit-pear'),
-    path('information/과일/레몬/', views.fruit_peach, name='fruit-lemon'),
-    path('information/과일/파인애플/', views.fruit_grapes, name='fruit-fineapple'),
-    # 채소
-    path('information/채소/오이/', views.vegetable_cucumber, name='vegetable-cucumber'),
-    path('information/채소/당근/', views.vegetable_carrot, name='vegetable-carrot'),
-    path('information/채소/양파/', views.vegetable_onion, name='vegetable-onion'),
-    path('information/채소/파/', views.vegetable_greenonion, name='vegetable-greenonion'),
-    path('information/채소/깐마늘(국산)/', views.vegetable_garlic, name='vegetable-garlic'),
-    # 쌀/잡곡
-    path('information/쌀_잡곡/쌀/', views.rice_white, name='rice-white'),
-    path('information/쌀_잡곡/찹쌀/', views.rice_sticky, name='rice-sticky'),
-    path('information/쌀_잡곡/콩/', views.rice_bean, name='rice-bean'),
-    path('information/쌀_잡곡/고구마/', views.rice_sweetpotato, name='rice-sweetpotato'),
-    path('information/쌀_잡곡/감자/', views.rice_potato, name='rice-potato'),
-    # 수산물
-    path('information/수산물/고등어/', views.fish_mackerel, name='fish-mackerel'),
-    path('information/수산물/갈치/', views.fish_hairtail, name='fish-hairtail'),
-    path('information/수산물/꽁치/', views.fish_croaker, name='fish-croaker'),
-    path('information/수산물/물오징어/', views.fish_squid, name='fish-squid'),
-    path('information/수산물/새우/', views.fish_shrimp, name='fish-shrimp'),
+
     
 ]
