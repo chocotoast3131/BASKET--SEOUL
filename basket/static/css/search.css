@@ -374,7 +374,7 @@ header .header_tiny .tiny_menu>a:hover {
     width: 800px;
     height: 80px;
     margin-left: 740px;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
 
 .search-r .s-n {
@@ -403,19 +403,15 @@ header .header_tiny .tiny_menu>a:hover {
 
 
 /*search_result*/
-
 .search {
     width: 1000px;
-    height: 500px;
-    margin-left: 580px;
+    margin-left: 600px;
+    text-align: center;
+    margin-top: 25px;
 }
 
-.search-wrap {
-    border: solid black;
-}
 
-.search-result .result-kind {
-    font-size: 30px;
+.search .bold {
     font-weight: 800;
 }
 

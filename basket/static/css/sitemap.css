@@ -441,7 +441,7 @@ header .header_tiny .tiny_menu>a:hover {
 }
 
 .vegetables .vegetables_v .apple {
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 /*rice*/
@@ -452,11 +452,11 @@ header .header_tiny .tiny_menu>a:hover {
 
 .rice .rice_r {
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 95px;
 }
 
 .rice .rice_r .apple {
-    margin-right: 150px;
+    margin-right: 130px;
 }
 
 /*fish*/
@@ -467,11 +467,11 @@ header .header_tiny .tiny_menu>a:hover {
 
 .fish .fish_f {
     margin-top: 40px;
-    margin-left: 100px;
+    margin-left: 90px;
 }
 
 .fish .fish_f .apple {
-    margin-right: 100px;
+    margin-right: 130px;
 }
 
 
