@@ -402,7 +402,7 @@ header .header_tiny .tiny_menu>a:hover {
 
 
 
-.search-rname{
+.search-rname {
     width: 650px;
     margin-top: 20px;
     margin-bottom: 35px;
@@ -415,8 +415,8 @@ header .header_tiny .tiny_menu>a:hover {
 
 /*search_result*/
 .search {
-    width: 1000px;
-    margin-left: 600px;
+    width: 700px;
+    margin-left: 770px;
     text-align: center;
     margin-top: 25px;
 }
