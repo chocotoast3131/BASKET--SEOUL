@@ -403,12 +403,13 @@ header .header_tiny .tiny_menu>a:hover {
 
 
 .search-rname{
-    width: 500px;
+    width: 750px;
     margin-top: 20px;
     margin-bottom: 35px;
-    margin-left: 940px;
-    font-size: 35px;
-    font-weight: 800;
+    margin-left: 720px;
+    font-size: 30px;
+    font-weight: 800x;
+    border: solid black;
 }
 
 
