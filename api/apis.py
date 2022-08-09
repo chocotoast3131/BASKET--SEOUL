@@ -1,4 +1,5 @@
 from django.http import JsonResponse
+
 from api.controller.Detailed_price import Detailed, Detailed_graph, marine_products_graph
 from api.controller.price import price_1
 
