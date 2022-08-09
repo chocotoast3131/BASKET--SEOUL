@@ -32,14 +32,15 @@ def SevenEleven(request):
 def CU(request):
     return render(request, 'basket/CU.html')
 
-# 검색
+# 검색 페이지
 def search(request):
     return render(request, 'basket/search.html')
 
-def searched(request): # 검색결과
+# 검색결과
+def searched(request): 
     name = request.GET.get("name") # 쿼리스트링 받기
     results = ItemName.objects.filter(Q(category_name__icontains = name)|Q(item_name__icontains = name)|Q(kind_name__icontains = name)) # Q 조건문, name이 ~이거나 ~인것
-    count = results.count() # 검색결과 count
+    count = results.count()
     return render(request, 'basket/search.html', {"results":results, "count":count, "name":name})
 
 # 상세정보
