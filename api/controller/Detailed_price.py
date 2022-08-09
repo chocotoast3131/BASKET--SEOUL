@@ -1,6 +1,6 @@
 #상세정보/품목별함수
-from api_module import graph_func, class_func1
-from condition import Detailed_graph_code, Detailed_code_name
+from .api_module import graph_func, class_func1
+from .condition import Detailed_graph_code, Detailed_code_name
 import pandas as pd
 import json
 
