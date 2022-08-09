@@ -1,4 +1,4 @@
-from api_module import f_class__, f_item__
+from .api_module import f_class__, f_item__
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta
 
