@@ -59,11 +59,11 @@
     </div>
 
 
-    <p class="search-rname">"{{ name }}"에 대한 검색결과입니다</p>
+    {% if results %}
+    <p class="search-rname">"{{ name }}"에 대한 검색결과는 {{ count }}건입니다</p>
 
 
     <!--search result-->
-    {% if results %}
     <table class="search">
         <thead class="bold">
             <tr>
