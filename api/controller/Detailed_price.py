@@ -31,7 +31,7 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     df_json = del_marketname2.to_json(orient = 'records')
     df_dict = json.loads(df_json)
     return df_dict
-print(Detailed_graph('사과'))
+# print(Detailed_graph('사과'))
 
 def marine_products_graph(value_name): #수산물 그래프용 함수
     
@@ -49,4 +49,4 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     m_df_json = m_del_marketname2.to_json(orient = 'records')
     m_df_dict = json.loads(m_df_json)
     return m_df_dict
-print(marine_products_graph('새우'))
+# print(marine_products_graph('새우'))
