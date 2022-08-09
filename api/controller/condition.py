@@ -1,4 +1,4 @@
-from .api_module import f_class__, f_item__
+from api_module import f_class__, f_item__
 from datetime import date, timedelta
 from dateutil.relativedelta import relativedelta
 
@@ -79,7 +79,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
 def Detailed_graph_code(value_name):
     
     day = date.today() - timedelta(1)
-    months = day - relativedelta(months=3)
+    months = day - relativedelta(months=1, weeks=1) #그래프 얼마나 잡힐지 가늠 안돼서 우선 약 5주로 기간 설정
 
     match(value_name):
         case '쌀':
@@ -120,7 +120,7 @@ def Detailed_graph_code(value_name):
         case '꽁치':
             graph_print = f_item__('612', '01', months, day, '05')
         case '물오징어':
-            graph_print = f_item__('619', '01', months, day, '05')
+            graph_print = f_item__('619', '02', months, day, '05')
         case '새우':
             graph_print = f_item__('654', '01', months, day, '05')
 
