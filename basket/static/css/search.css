@@ -424,16 +424,11 @@ header .header_tiny .tiny_menu>a:hover {
 
 .search .bold {
     font-weight: 800;
+    font-size: 20px;
 }
 
-.search-result .result-d {
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.search-result .result-kind {
-    font-size: 30px;
-    font-weight: 800;
+.search .search-t {
+    font-size: 20px;
 }
 
 
