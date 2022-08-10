@@ -40,7 +40,7 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     # m_df_dict = json.loads(m_df_json)
 
     return plt.show()
-print(Detailed_graph('파'))
+# print(Detailed_graph('파'))
 
 def marine_products_graph(value_name): #수산물 그래프용 함수
     
