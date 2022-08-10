@@ -45,7 +45,7 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
 
     return graph_img
 
-# print(Detailed_graph('사과'))
+print(Detailed_graph('사과'))
 
 def marine_products_graph(value_name): #수산물 그래프용 함수
     
@@ -61,12 +61,12 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     m_del_marketname2['price'] = m_del_marketname2['price'].apply(lambda x: x.replace(',', ''))
     m_del_marketname2['price'] = pd.to_numeric(m_del_marketname2['price'])
 
-    months =  m_del_marketname2['today']
-    price = m_del_marketname2['price']
+    m_months =  m_del_marketname2['today']
+    m_price = m_del_marketname2['price']
 
     plt.rc('font', family='Malgun Gothic')
     plt.figure(figsize=(14.5, 5))
-    plt.plot(months, price, color='#ff7f0e')
+    plt.plot(m_months, m_price, color='#ff7f0e')
     plt.xlabel('날짜', loc='right')
     plt.ylabel('가격', loc='top', rotation=360)
     plt.savefig('marin_graph.png')
