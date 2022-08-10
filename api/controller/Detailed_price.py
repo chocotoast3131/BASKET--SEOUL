@@ -1,10 +1,10 @@
 #상세정보/품목별함수
 from .api_module import graph_func, class_func1
 from .condition import Detailed_graph_code, Detailed_code_name
+from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
 import json
-
 
 def Detailed(name, kindname): #품종별로도 볼수있어야함
     df = pd.DataFrame(class_func1(Detailed_code_name(name, kindname)))
@@ -34,13 +34,18 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     months =  del_marketname2['today']
     price = del_marketname2['price']
 
+    plt.rc('font', family='Malgun Gothic')
+    plt.figure(figsize=(14.5, 5))
     plt.plot(months, price, color='#ff7f0e')
-    plt.figure(14.5, )
-    # m_df_json = m_del_marketname2.to_json(orient = 'records')
-    # m_df_dict = json.loads(m_df_json)
+    plt.xlabel('날짜', loc='right')
+    plt.ylabel('가격', loc='top', rotation=360)
+    plt.savefig('graph.png')
+    
+    graph_img = Image.open('graph.png')
 
-    return plt.show()
-# print(Detailed_graph('파'))
+    return graph_img
+
+# print(Detailed_graph('사과'))
 
 def marine_products_graph(value_name): #수산물 그래프용 함수
     
@@ -59,11 +64,15 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     months =  m_del_marketname2['today']
     price = m_del_marketname2['price']
 
+    plt.rc('font', family='Malgun Gothic')
+    plt.figure(figsize=(14.5, 5))
     plt.plot(months, price, color='#ff7f0e')
-    plt.figure(14.5, )
+    plt.xlabel('날짜', loc='right')
+    plt.ylabel('가격', loc='top', rotation=360)
+    plt.savefig('marin_graph.png')
+    
+    marin_graph_img = Image.open('marin_graph.png')
 
-    # m_df_json = m_del_marketname2.to_json(orient = 'records')
-    # m_df_dict = json.loads(m_df_json)
-    return plt.show()
+    return marin_graph_img
 
 # print(marine_products_graph('고등어'))
