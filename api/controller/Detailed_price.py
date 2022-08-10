@@ -39,9 +39,9 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     plt.plot(months, price, color='#ff7f0e')
     plt.xlabel('날짜', loc='right')
     plt.ylabel('가격', loc='top', rotation=360)
-    plt.savefig('graph.png')
+    plt.savefig('basket/static/logo,img/graph.png')
     
-    graph_img = Image.open('graph.png')
+    graph_img = Image.open('basket/static/logo,img/graph.png')
 
     return graph_img
 
@@ -69,9 +69,9 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     plt.plot(months, price, color='#ff7f0e')
     plt.xlabel('날짜', loc='right')
     plt.ylabel('가격', loc='top', rotation=360)
-    plt.savefig('graph.png')
+    plt.savefig('basket/static/logo,img/graph.png')
     
-    graph_img = Image.open('graph.png')
+    graph_img = Image.open('basket/static/logo,img/graph.png')
 
     return graph_img
 
