@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Q
+from api.controller.Detailed_price import Detailed_graph
 
 from api.models import ItemName
 
@@ -44,5 +45,10 @@ def searched(request):
 
 # 상세정보
 def detailed(request,category,itemname):
+    Detailed_graph(itemname)
     return render(request, 'basket/detailed.html', {"category":category,"itemname":itemname})
 
+# 라인 그래프
+def graph(request):
+
+    return render(request, 'basket/detail.html')
