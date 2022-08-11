@@ -45,10 +45,5 @@ def searched(request):
 
 # 상세정보
 def detailed(request,category,itemname):
-    Detailed_graph(itemname)
     return render(request, 'basket/detailed.html', {"category":category,"itemname":itemname})
 
-# 라인 그래프
-def graph(request):
-
-    return render(request, 'basket/detail.html')

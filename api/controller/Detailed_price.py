@@ -95,4 +95,4 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
 
     return m_image_json
 
-print(marine_products_graph('새우'))
+# print(marine_products_graph('새우'))
