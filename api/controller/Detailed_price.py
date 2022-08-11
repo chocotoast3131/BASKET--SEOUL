@@ -4,6 +4,7 @@ from .condition import Detailed_graph_code, Detailed_code_name
 from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
+import base64
 import json
 
 def Detailed(name, kindname): #품종별로도 볼수있어야함
@@ -43,9 +44,19 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     
     graph_img = Image.open('basket/static/logo,img/graph.png')
     
-    return graph_img
+    with open('basket/static/logo,img/graph.png', 'rb') as graph_img:
+        image_binary = graph_img.read()
+        encoded_string = base64.b64encode(image_binary)
 
-# print(Detailed_graph('물오징어'))
+        image_dict = {
+            'basket/static/logo,img/graph.png': encoded_string.decode()
+        }
+
+        image_json = json.dumps(image_dict)
+
+    return image_json
+
+# print(Detailed_graph('사과'))
 
 def marine_products_graph(value_name): #수산물 그래프용 함수
     
@@ -73,6 +84,16 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     
     graph_img = Image.open('basket/static/logo,img/graph.png')
 
-    return graph_img
+    with open('basket/static/logo,img/graph.png', 'rb') as graph_img:
+        image_binary = graph_img.read()
+        encoded_string = base64.b64encode(image_binary)
 
-# print(marine_products_graph('새우'))
+        image_dict = {
+            'basket/static/logo,img/graph.png': encoded_string.decode()
+        }
+
+        image_json = json.dumps(image_dict)
+
+    return image_json
+
+# print(marine_products_graph('고등어'))
