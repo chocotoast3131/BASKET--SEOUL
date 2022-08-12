@@ -3,6 +3,8 @@ from .api_module import graph_func, class_func1
 from .condition import Detailed_graph_code, Detailed_code_name
 from PIL import Image
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import json
 
