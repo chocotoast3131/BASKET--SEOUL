@@ -70,7 +70,7 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     plt.ylabel('가격', loc='top', rotation=360)
     plt.savefig('basket/static/logo,img/m_graph.png')
     
-    m_graph_img = Image.open('basket/static/logo,img/m_graph.png')
+    m_graph_img = Image.open('basket/static/logo,img/m_graph.png', transparent=True)
 
     return m_graph_img
 

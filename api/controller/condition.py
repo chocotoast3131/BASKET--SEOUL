@@ -79,7 +79,7 @@ def Detailed_code_name(name, kindname): #Detailed_price
 def Detailed_graph_code(value_name):
     
     day = date.today() - timedelta(1)
-    months = day - relativedelta(months=1, weeks=1) #그래프 얼마나 잡힐지 가늠 안돼서 우선 약 5주로 기간 설정
+    months = day - relativedelta(months=1)
 
     match(value_name):
         case '쌀':
