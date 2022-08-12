@@ -72,16 +72,6 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
     
     m_graph_img = Image.open('basket/static/logo,img/m_graph.png')
 
-    with open('basket/static/logo,img/m_graph.png', 'rb') as m_graph_img:
-        m_image_binary = m_graph_img.read()
-        m_encoded_string = base64.b64encode(m_image_binary)
+    return m_graph_img
 
-        m_image_dict = {
-            'basket/static/logo,img/graph.png': m_encoded_string.decode()
-        }
-
-        m_image_json = json.dumps(m_image_dict)
-
-    return m_image_json
-
-print(marine_products_graph('새우'))
+# print(marine_products_graph('새우'))
