@@ -46,7 +46,10 @@ def searched(request):
 # 상세정보
 def detailed(request,category,itemname):
     if(category == "수산물"):
-        marine_products_graph(itemname)
+        if(itemname == "물오징어"):
+            Detailed_graph(itemname)
+        else:
+            marine_products_graph(itemname)
     else: 
         Detailed_graph(itemname)
     return render(request, 'basket/detailed.html', {"category":category,"itemname":itemname})

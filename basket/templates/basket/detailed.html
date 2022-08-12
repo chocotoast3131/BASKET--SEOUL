@@ -53,7 +53,7 @@
 
 
     <div class="container">
-        {% if category == "수산물" %}
+        {% if category == "수산물" and itemname != "물오징어" %}
         <img src="{% static 'logo,img/m_graph.png' %}" alt="그래프 없음">
         {% else %}
         <img src="{% static 'logo,img/graph.png' %}" alt="그래프 없음">
