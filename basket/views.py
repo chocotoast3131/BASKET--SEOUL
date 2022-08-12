@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.db.models import Q
-from api.controller.Detailed_price import Detailed_graph
+from api.controller.Detailed_price import Detailed_graph, marine_products_graph
 
 from api.models import ItemName
 
@@ -45,5 +45,9 @@ def searched(request):
 
 # 상세정보
 def detailed(request,category,itemname):
+    if(category == "수산물"):
+        marine_products_graph(itemname)
+    else: 
+        Detailed_graph(itemname)
     return render(request, 'basket/detailed.html', {"category":category,"itemname":itemname})
 

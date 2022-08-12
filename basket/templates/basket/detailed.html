@@ -52,14 +52,18 @@
     </div>
 
 
+    <div class="container">
+        {% if category == "수산물" %}
+        <img src="{% static 'logo,img/m_graph.png' %}" alt="그래프 없음">
+        {% else %}
+        <img src="{% static 'logo,img/graph.png' %}" alt="그래프 없음">
+        {% endif %}
+    </div>
 
-
-    
     
     <!--linechart-->
     
     <div class="container">
-        <img src="{% static 'logo,img/graph.png' %}" alt="그래프 없음">
         <div class="row">
             <div class="col-med-12">
                 <canvas id="myChartOne"></canvas>
