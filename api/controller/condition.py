@@ -12,7 +12,7 @@ def price_code_name(name):
         day -= timedelta(2)
     
     match(name):
-        case "쌀/잡곡":
+        case "쌀_잡곡":
             code_print = f_class__('100', day)
         case "채소":
             code_print = f_class__('200', day)

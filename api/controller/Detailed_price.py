@@ -4,7 +4,6 @@ from .condition import Detailed_graph_code, Detailed_code_name
 from PIL import Image
 import pandas as pd
 import matplotlib.pyplot as plt
-import base64
 import json
 
 def Detailed(name, kindname): #품종별로도 볼수있어야함
@@ -42,18 +41,8 @@ def Detailed_graph(value_name): #마켓명 하나만 출력할 수 있음/그래
     plt.savefig('basket/static/logo,img/graph.png', transparent=True)
     
     graph_img = Image.open('basket/static/logo,img/graph.png')
-    
-    with open('basket/static/logo,img/graph.png', 'rb') as graph_img:
-        image_binary = graph_img.read()
-        encoded_string = base64.b64encode(image_binary)
 
-        image_dict = {
-            'basket/static/logo,img/graph.png': encoded_string.decode()
-        }
-
-        image_json = json.dumps(image_dict)
-
-    return image_json
+    return graph_img
 
 # print(Detailed_graph('사과'))
 
@@ -95,4 +84,4 @@ def marine_products_graph(value_name): #수산물 그래프용 함수
 
     return m_image_json
 
-# print(marine_products_graph('새우'))
+print(marine_products_graph('새우'))
