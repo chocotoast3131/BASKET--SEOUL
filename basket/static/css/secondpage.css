@@ -355,6 +355,7 @@ header .header_tiny .tiny_menu>a:hover {
     margin-left: 170px;
     padding-left: 50px;
     margin-bottom: 150px;
+    border:solid black; 
 }
 
 .conbox {
@@ -409,6 +410,7 @@ header .header_tiny .tiny_menu>a:hover {
     margin-left: 330px;
     width: 1380px;
     margin-bottom: 300px;
+    border:solid black;
 }
 
 
