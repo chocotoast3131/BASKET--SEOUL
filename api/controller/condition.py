@@ -24,8 +24,8 @@ def price_code_name(name):
 
 def Detailed_code_name(name, kindname): #Detailed_price
     
-    day = date.today() - timedelta(1) #당일 데이터는 없기 때문에 전날을 기준으로 함
-    
+    # day = date.today() - timedelta(1) #당일 데이터는 없기 때문에 전날을 기준으로 함
+    day = date.today() - timedelta(4)
     if day.weekday() == 5: #오늘이 토(5), 일(6)이라면 day를 금(4)요일로 만든다
         day -= timedelta(1)
     elif day.weekday() == 6:
